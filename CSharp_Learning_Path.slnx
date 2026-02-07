@@ -1,1 +1,7 @@
-<Solution />
+<Solution>
+  <Folder Name="/BobTabor/" />
+  <Folder Name="/BobTabor/BobTaborFundamentals/" />
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
+    <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
+  </Folder>
+</Solution>
