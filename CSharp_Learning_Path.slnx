@@ -11,4 +11,7 @@
     <Project Path="Conditional_Operator/Conditional_Operator.csproj" Id="b99e51b1-0a81-4864-be8f-7c56958ce73f" />
     <Project Path="Decision/Decision.csproj" Id="36520694-c411-4806-bde3-7d6686cd0a3d" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_4_Operators_Expressions_statemet/">
+    <Project Path="Operators/Operators.csproj" Id="153a22fb-8c30-4038-bb6e-8d7db5484cb9" />
+  </Folder>
 </Solution>
