@@ -7,4 +7,8 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_2_Variables/">
     <Project Path="Variables/Variables.csproj" Id="4d05b529-ac1c-420d-bed5-455b1b96e3df" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_3_If_decision/">
+    <Project Path="Conditional_Operator/Conditional_Operator.csproj" Id="b99e51b1-0a81-4864-be8f-7c56958ce73f" />
+    <Project Path="Decision/Decision.csproj" Id="36520694-c411-4806-bde3-7d6686cd0a3d" />
+  </Folder>
 </Solution>
