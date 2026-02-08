@@ -4,4 +4,7 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_2_Variables/">
+    <Project Path="Variables/Variables.csproj" Id="4d05b529-ac1c-420d-bed5-455b1b96e3df" />
+  </Folder>
 </Solution>
