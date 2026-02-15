@@ -17,46 +17,47 @@ x = 3 + 4;
 // substraction operator 
 x = 4 - 3;
 
-// multiplication operator
+// Multiplication operator
 x = 4 * 3;
-// division operator 
 
+
+// Division operator 
 x = 4 / 2;
 
-// order of operation using parethesis 
+// Order of operation using parethesis 
 x = (x + y) * (a - b);
 
 // there are many operators used to evaluate values .. 
 
-// equality operator 
+// Equality operator 
 if (x ==y )
 {
        Console.WriteLine("x and y are equal");
-
 }
 
 // greater than operator 
 if (x > y )
 {
-
+    Console.WriteLine("This is when \"X\" is greather than \"Y\" . "  );
 }
 
 // less than operator 
 
 if (x < y)
 {
-
+    Console.WriteLine("This is when \"Y\" is greather than \"X\".");
 }
 
 // greater or equal to operator 
 if (x >= y)
 {
-
+    Console.WriteLine("This is when \"X\"  is greather or equal to  \"Y\". ");
 }
 
 // less than or equal to operator
 if (x <= y)
 {
+    Console.WriteLine("This is when \"X\" is smaller or equal to \"Y\".");
 }
 
 // There are conditional operators as well that can be used to expand / enhance an evaluation ..
@@ -65,13 +66,13 @@ if (x <= y)
 // conditional AND operator 
 if ((x > y) && (a > b))
 {
-
+    Console.WriteLine("This is only TRUE when \"X\" is greater than \"Y\" and \"A\" is greater than \"B\".");
 }
 
 // conditional OR operator 
 if((x > y) || (a > b))
 {
-
+    Console.WriteLine("This is TRUE if left parenthisis is true, or right parethisis is true, or both are true");
 }
 
 // aslo , here 's the in-line conditional operator we learedn about in the previous lession 
@@ -82,5 +83,7 @@ Console.WriteLine(message);
 Console.WriteLine("Hi");
 
 
+
+//https://www.youtube.com/watch?v=0QUgvfuKvWU 
 
 
