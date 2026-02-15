@@ -14,4 +14,7 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_4_Operators_Expressions_statemet/">
     <Project Path="Operators/Operators.csproj" Id="153a22fb-8c30-4038-bb6e-8d7db5484cb9" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_5_For_Iteration/">
+    <Project Path="For_Iteration/For_Iteration.csproj" Id="6fe0939c-3505-4e9d-9981-901675b5c16d" />
+  </Folder>
 </Solution>
