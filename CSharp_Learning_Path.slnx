@@ -20,4 +20,8 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_6_Arrays/">
     <Project Path="Understanding_Arrays/Understanding_Arrays.csproj" Id="24833f9e-58ee-4b67-a51b-7c38e0db30c2" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_7_Simple_Methods/">
+    <Project Path="HelperMethods/HelperMethods.csproj" Id="89a08a9e-63b0-4457-9d1e-fc7e05d98a87" />
+    <Project Path="Understanding_Methods/Understanding_Methods.csproj" Id="e901efb6-1bf3-4aae-99c5-328f12853bb3" />
+  </Folder>
 </Solution>
