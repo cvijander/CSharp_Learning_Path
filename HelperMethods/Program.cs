@@ -49,21 +49,31 @@
         Console.WriteLine("Results: " + result);
         */
         Console.WriteLine("Results: ");
-        ReverseString(firstName);
-        ReverseString(lastName);
-        ReverseString(city);
+        string reversedFirstName =  ReverseString(firstName);
+        string reversedLastName = ReverseString(lastName);
+        string reversedCity = ReverseString(city);
+
+        PrintMessage(reversedFirstName);
+        PrintMessage(reversedLastName);
+        PrintMessage(reversedCity);
     }
 
-    private static void ReverseString(string message)
+    private static string ReverseString(string message)
     {
         char[] messageArray = message.ToCharArray();
         Array.Reverse(messageArray);
-        foreach (char item in messageArray)
+        return String.Concat(messageArray);
+       
+    }
+
+    private static void PrintMessage(string inputMessage)
+    {
+        foreach (char item in inputMessage)
         {
             Console.Write(item);
         }
         Console.Write(" ");
-
-        // https://www.youtube.com/watch?v=0QUgvfuKvWU
     }
 }
+
+// https://www.youtube.com/watch?v=0QUgvfuKvWU
