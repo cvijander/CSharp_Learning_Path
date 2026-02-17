@@ -26,4 +26,7 @@
     <Project Path="HelperMetodsBefore/HelperMetodsBefore.csproj" Id="73e3d36a-1105-4125-ab49-b53bbbfe9d86" />
     <Project Path="Understanding_Methods/Understanding_Methods.csproj" Id="e901efb6-1bf3-4aae-99c5-328f12853bb3" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_8_While_Iteration/">
+    <Project Path="While_Iterations/While_Iterations.csproj" Id="2aa80073-e0b5-4f69-bc57-f896929d6c6f" />
+  </Folder>
 </Solution>

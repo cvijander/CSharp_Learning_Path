@@ -26,6 +26,8 @@
         DisplayResults(ReverseString(firstName), ReverseString(lastName), ReverseString(city));
         Console.WriteLine();
         DisplayResults(ReverseString(firstName) + " " + ReverseString(lastName) + " " + ReverseString(city));
+
+       
     }
 
     /*
