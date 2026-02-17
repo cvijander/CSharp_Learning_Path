@@ -28,5 +28,6 @@
   </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_8_While_Iteration/">
     <Project Path="While_Iterations/While_Iterations.csproj" Id="2aa80073-e0b5-4f69-bc57-f896929d6c6f" />
+    <Project Path="While_Iteration_1/While_Iteration_1.csproj" Id="525bd700-f6f0-4f71-b668-8b3ae162d40c" />
   </Folder>
 </Solution>
