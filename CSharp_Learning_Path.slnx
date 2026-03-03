@@ -27,6 +27,7 @@
     <Project Path="Understanding_Methods/Understanding_Methods.csproj" Id="e901efb6-1bf3-4aae-99c5-328f12853bb3" />
   </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_8_While_Iteration/">
+    <Project Path="Do_While_Traka/Do_While_Traka.csproj" Id="002cfe49-9453-4aed-b4f5-2d54d93d21a1" />
     <Project Path="While_Iterations/While_Iterations.csproj" Id="2aa80073-e0b5-4f69-bc57-f896929d6c6f" />
     <Project Path="While_Iteration_1/While_Iteration_1.csproj" Id="525bd700-f6f0-4f71-b668-8b3ae162d40c" />
     <Project Path="While_Iteration_2/While_Iteration_2.csproj" Id="e1041407-c14e-496a-ad0f-c9ad40cd7a5f" />
