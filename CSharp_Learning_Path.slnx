@@ -27,6 +27,9 @@
     <Project Path="Understanding_Methods/Understanding_Methods.csproj" Id="e901efb6-1bf3-4aae-99c5-328f12853bb3" />
   </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_8_While_Iteration/">
+    <Project Path="do_while_kalkulator_za_komponente/do_while_kalkulator_za_komponente.csproj" Id="808bef7a-ec20-4a7c-81c1-4a8bda83f93b" />
+    <Project Path="Do_while_loptica/Do_while_loptica.csproj" Id="619e5394-6023-4fde-9896-341023b253ea" />
+    <Project Path="do_while_tezine_paketa/do_while_tezine_paketa.csproj" Id="3eb8dc26-9f17-46fe-a0a3-bc3b1b3eea3a" />
     <Project Path="Do_While_Traka/Do_While_Traka.csproj" Id="002cfe49-9453-4aed-b4f5-2d54d93d21a1" />
     <Project Path="While_Iterations/While_Iterations.csproj" Id="2aa80073-e0b5-4f69-bc57-f896929d6c6f" />
     <Project Path="While_Iteration_1/While_Iteration_1.csproj" Id="525bd700-f6f0-4f71-b668-8b3ae162d40c" />
