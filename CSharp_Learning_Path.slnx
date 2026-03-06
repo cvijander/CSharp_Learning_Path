@@ -4,6 +4,9 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_10_Dates_and_Times/">
     <Project Path="DatesAndTimes/DatesAndTimes.csproj" Id="2720f098-8ae4-498b-ad81-53e78dfb5cfb" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_12_Classes/">
+    <Project Path="SimpleClasses/SimpleClasses.csproj" Id="0f82b043-2d36-4857-9562-81341412954e" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>

@@ -35,5 +35,7 @@
         Console.WriteLine(myAge.TotalDays);
 
         Console.ReadLine();
+
+        // https://www.youtube.com/watch?v=0QUgvfuKvWU  4:04
     }
 }
