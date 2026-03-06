@@ -1,6 +1,9 @@
 <Solution>
   <Folder Name="/BobTabor/" />
   <Folder Name="/BobTabor/BobTaborFundamentals/" />
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_10_Dates_and_Times/">
+    <Project Path="DatesAndTimes/DatesAndTimes.csproj" Id="2720f098-8ae4-498b-ad81-53e78dfb5cfb" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
