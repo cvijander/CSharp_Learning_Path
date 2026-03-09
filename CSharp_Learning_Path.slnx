@@ -8,6 +8,7 @@
     <Project Path="SimpleClasses/SimpleClasses.csproj" Id="0f82b043-2d36-4857-9562-81341412954e" />
     <Project Path="SimpleClasses1/SimpleClasses1.csproj" Id="c8147ede-bb28-4af0-8435-7b128c843108" />
     <Project Path="SimpleClasses2/SimpleClasses2.csproj" Id="ce48faeb-ce36-4b13-b338-5571c2e2f54f" />
+    <Project Path="SimpleClasses3/SimpleClasses3.csproj" Id="ccfda9e2-f86f-4f1f-a9eb-8b8ad10f69d7" />
   </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
