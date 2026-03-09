@@ -10,6 +10,9 @@
     <Project Path="SimpleClasses2/SimpleClasses2.csproj" Id="ce48faeb-ce36-4b13-b338-5571c2e2f54f" />
     <Project Path="SimpleClasses3/SimpleClasses3.csproj" Id="ccfda9e2-f86f-4f1f-a9eb-8b8ad10f69d7" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_12_ObjectLifetime/">
+    <Project Path="ObjectLifetime/ObjectLifetime.csproj" Id="e6aad33d-b48a-4300-9396-632055214ae1" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
