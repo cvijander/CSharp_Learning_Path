@@ -6,6 +6,8 @@
 
         Car myThirdCar = new Car("Honda", "Civic", 2005, "Yellow");
 
+        Car.MyMethod();
+
         /*
                 myCar.Make = "Oldsmobile";
                 myCar.Model = "Cutlas Supreme";
@@ -81,8 +83,15 @@ class Car
         Year = year;
     }
 
+    public static void MyMethod()
+    {
+        Console.WriteLine("Called from static my Method");
+    }
+
 }
 
 // https://www.youtube.com/watch?v=0QUgvfuKvWU
 // 440 konstruktor 
 //455 static
+
+// obevezno jos jednom ili dva puta pogledati, ali definitivno ovo mi je poznato ali bolje bolje jos jednom ili dva puta pogledati
