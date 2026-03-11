@@ -29,6 +29,9 @@ internal class Program
         Console.WriteLine($"Outside of the scope {j} ");
         Console.WriteLine($"Outside od for loop {k}");
         HelperMethod();
+
+        Car myCar = new Car();
+        myCar.DoSomething();
         Console.ReadLine();
         
     }
@@ -39,5 +42,18 @@ internal class Program
     }
 }
 
+class Car
+{
+    public void DoSomething()
+    {
+        Console.WriteLine(helperMethod());
+    }
 
-// 5 sati 
+    private string helperMethod()
+    {
+        return "Hello World from Car class";
+    }
+}
+
+
+// 5 sati od 5 do 5:18
