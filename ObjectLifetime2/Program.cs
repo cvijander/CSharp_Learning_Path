@@ -17,6 +17,7 @@
 
         Car myForthCar = new Car("Toyota", "Supra", 2010, "Purple");
 
+        Car.MyMethod();
 
         Console.WriteLine($"{myCar.Make}  {myCar.Model}  {myCar.Color} {myCar.Year}");
 
@@ -69,5 +70,10 @@ class Car
         Model = model;
         Year = year;
         Color = color;
+    }
+
+    public static void MyMethod()
+    {
+        Console.WriteLine("Calling my methond");
     }
 }
