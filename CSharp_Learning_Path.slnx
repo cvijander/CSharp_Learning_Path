@@ -15,6 +15,9 @@
     <Project Path="ObjectLifetime1/ObjectLifetime1.csproj" Id="eb5842b1-25fb-46c8-a6cb-453d8b935719" />
     <Project Path="ObjectLifetime2/ObjectLifetime2.csproj" Id="2befff4b-5379-43e9-b812-99202cd4ddf1" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_13_Scope/">
+    <Project Path="UnderstandingScope/UnderstandingScope.csproj" Id="5ed735df-1f64-46f7-a06d-b786561c0497" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
