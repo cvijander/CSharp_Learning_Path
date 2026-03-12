@@ -24,6 +24,9 @@
         Console.WriteLine($"{k} this is k , outside for loop");
 
         HelperMethod();
+
+        Car myCar = new Car();
+        myCar.DoSomething();
         Console.ReadLine();
 
     }
@@ -32,4 +35,17 @@
     {
         Console.WriteLine($"This is from HelperMethod()  value k is {k}");
     }
+}
+
+class Car
+{
+    public void DoSomething()
+    {
+        Console.WriteLine(helperMethod());
+    }
+
+    private string helperMethod()
+    {
+        return "hello from helper method inside car class";
+   }
 }
