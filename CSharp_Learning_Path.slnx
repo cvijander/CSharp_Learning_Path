@@ -18,6 +18,7 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_13_Scope/">
     <Project Path="UnderstandingScope/UnderstandingScope.csproj" Id="5ed735df-1f64-46f7-a06d-b786561c0497" />
     <Project Path="UnderstandingScope1/UnderstandingScope1.csproj" Id="4fe7cf40-63c2-4b62-b195-118d941db496" />
+    <Project Path="UnderstandingScope2/UnderstandingScope2.csproj" Id="a7160d90-ceba-4828-a988-d72ae39055ff" />
   </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
