@@ -23,6 +23,10 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_14_AssembliesAndNamespaces/">
     <Project Path="AssembliesAndNamespaces/AssembliesAndNamespaces.csproj" Id="708bc0d8-f2ef-42a9-96a4-493d7aa0a33d" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_15_References/">
+    <Project Path="ConsoleApplication2Reference/ConsoleApplication2Reference.csproj" Id="8fc9af82-bef0-49a5-a18b-e8bc5ca678b2" />
+    <Project Path="MyCodeLibrary/MyCodeLibrary.csproj" Id="6b9bd6a2-f79c-4a27-b6da-278e48cb204d" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
