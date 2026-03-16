@@ -58,6 +58,27 @@ internal class Program
 
         // Dictionary <TKey, TValue>
 
+        Dictionary<string, Car> myDictionary = new Dictionary<string, Car>();
+
+        myDictionary.Add(car1.VIN, car1);
+        myDictionary.Add(car2.VIN, car2);
+
+        Console.WriteLine(myDictionary["A1"].Make);
+
+
+
+        // object inictializer sintacs 
+        Car car4 = new Car() { Make = "BMW", Model = "750", VIN = "A3" };
+
+
+        // Collection initializer 
+
+        List<Car> myCollectionOfCars = new List<Car>()
+        {
+            new Car { Make ="Tesla" , Model = "T1", VIN = "A4"},
+            new Car { Make = "Nissan", Model = "N1" ,VIN = "A5"}
+        };
+
 
 
         Console.ReadLine();
@@ -81,4 +102,4 @@ class Book
     public string ISBN { get; set; }
 }
 
-// https://www.youtube.com/watch?v=0QUgvfuKvWU  5:58 
+// https://www.youtube.com/watch?v=0QUgvfuKvWU  5:58  - 6:20
