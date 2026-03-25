@@ -30,6 +30,9 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_16_Collections/">
     <Project Path="WorkingWithCollections/WorkingWithCollections.csproj" Id="7a7990c9-f4e0-4482-a20b-83a4bc80fb10" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_17_Linq/">
+    <Project Path="UnderstandingLINQ/UnderstandingLINQ.csproj" Id="284a7621-e4ef-4f3e-8bff-6a53d8c0158b" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
