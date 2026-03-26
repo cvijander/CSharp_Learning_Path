@@ -50,7 +50,15 @@
         Console.WriteLine(myCars.TrueForAll(car => car.Year > 2012));
         Console.WriteLine(myCars.TrueForAll(car => car.Year > 2007));
 
+        myCars.ForEach(car => car.StickerPrice -= 3000);
         myCars.ForEach(car => Console.WriteLine($"{car.VIN} {car.StickerPrice:C}"));
+
+        Console.WriteLine(myCars.Exists(car => car.Model == "745li"));
+        Console.WriteLine(myCars.Sum(car => car.StickerPrice));
+        Console.WriteLine(myCars.GetType());
+        Console.WriteLine(orderedCars.GetType());
+        Console.WriteLine(orderedMethodCars.GetType());
+        Console.WriteLine(firstCarBmwSorted.GetType());
         Console.ReadLine();
     }
 }
