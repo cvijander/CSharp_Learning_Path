@@ -176,11 +176,22 @@ internal class Program
                    && car.Year == 2010 
                    select car;
 
+        var orderedCars = from car in myCars
+                          orderby car.Year descending
+                          select car;
+
 
 
         // linq method 
 
         var methodBMWS = myCars.Where(car => car.Make == "BMW" && car.Year == 2010);
+
+        var methodOrderedCars = myCars.OrderByDescending(car => car.Year);
+
+        var firstCar = myCars.First(car => car.Make == "BMW");
+
+        var firstCarYear = myCars.OrderByDescending(car => car.Year).First(car => car.Make == "Alfa Romeo");
+
 
 
         foreach (var car in bmws)
@@ -193,6 +204,72 @@ internal class Program
         foreach (var car in methodBMWS)
         {
             Console.WriteLine($"{car.Model} {car.VIN}");
+        }
+
+        Console.WriteLine("------------------");
+
+        foreach (var car in orderedCars)
+        {
+            Console.WriteLine($"{car.Year} {car.Model} {car.VIN}  {car.StickerPrice}");
+        }
+
+        Console.WriteLine("------------------");
+
+        foreach (var car in methodOrderedCars)
+        {
+            Console.WriteLine($"{car.Year} {car.Model} {car.VIN}  {car.StickerPrice}");
+        }
+
+        Console.WriteLine("------------------");
+
+        Console.WriteLine($"{firstCar.Model} {firstCar.VIN}");
+
+        Console.WriteLine("------------------");
+
+        Console.WriteLine($"{firstCarYear.VIN} {firstCarYear.StickerPrice}");
+
+        Console.WriteLine(myCars.TrueForAll(car => car.Year > 2012));
+
+        Console.WriteLine("-------------");
+
+
+        myCars.ForEach(car => car.StickerPrice -= 3000);
+        myCars.ForEach(car => Console.WriteLine($"{car.VIN}  {car.StickerPrice}"));
+
+
+        Console.WriteLine(myCars.Exists(car => car.Model == "754li"));
+
+        Console.WriteLine(myCars.Sum(car => car.StickerPrice));
+
+        Console.WriteLine(myCars.GetType());
+
+        Console.WriteLine(bmws.GetType());
+
+        Console.WriteLine(orderedCars.GetType());
+
+
+        Console.WriteLine(methodBMWS.GetType());
+
+        Console.WriteLine(methodOrderedCars.GetType());
+
+        Console.WriteLine(firstCar.GetType());
+
+        Console.WriteLine(firstCarYear.GetType());
+
+        Console.WriteLine("------------");
+
+        var priceLow50000 = myCars.Where(car => car.StickerPrice < 50000).OrderBy(car => car.StickerPrice);
+        foreach (var item in priceLow50000)
+        {
+            Console.WriteLine($"{item.StickerPrice}");
+        }
+        Console.WriteLine(" *********************");
+
+        var carsBetween1990And1999 = myCars.Where(car => car.Year >= 1990 && car.Year <= 1999).OrderByDescending(car => car.Year);
+
+        foreach (var item in carsBetween1990And1999)
+        {
+            Console.WriteLine($"{item.VIN}  {item.Year}");
         }
 
         Console.ReadLine();
