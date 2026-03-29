@@ -272,6 +272,12 @@ internal class Program
             Console.WriteLine($"{item.VIN}  {item.Year}");
         }
 
+        Console.WriteLine(" ******************");
+
+        var howManyBmw = myCars.Where(car => car.Make == "BMW").Count();
+
+        Console.WriteLine($" We have {howManyBmw}");
+
         Console.ReadLine();
     }
 }

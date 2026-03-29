@@ -1,0 +1,71 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        List<PcComponent> inventory = new List<PcComponent>()
+        {
+
+        new Cpu() { Ean = "CPU01", Manufacturer = "AMD", Model = "Ryzen 5 5600X", Price = 160, ReleaseYear = 2020, Cores = 6, Socket = "AM4", TdpW = 65 },
+            new Cpu() { Ean = "CPU02", Manufacturer = "AMD", Model = "Ryzen 7 5800X3D", Price = 320, ReleaseYear = 2022, Cores = 8, Socket = "AM4", TdpW = 105 },
+            new Cpu() { Ean = "CPU03", Manufacturer = "AMD", Model = "Ryzen 9 7950X", Price = 600, ReleaseYear = 2022, Cores = 16, Socket = "AM5", TdpW = 170 },
+            new Cpu() { Ean = "CPU04", Manufacturer = "Intel", Model = "Core i5-12400F", Price = 150, ReleaseYear = 2022, Cores = 6, Socket = "LGA1700", TdpW = 65 },
+            new Cpu() { Ean = "CPU05", Manufacturer = "Intel", Model = "Core i7-13700K", Price = 410, ReleaseYear = 2022, Cores = 16, Socket = "LGA1700", TdpW = 253 },
+            new Cpu() { Ean = "CPU06", Manufacturer = "Intel", Model = "Core i9-14900K", Price = 590, ReleaseYear = 2023, Cores = 24, Socket = "LGA1700", TdpW = 253 },
+
+            // --- GRAFIČKE KARTICE ---
+            new Gpu() { Ean = "GPU01", Manufacturer = "Nvidia", Model = "RTX 3060", Price = 280, ReleaseYear = 2021, VramGb = 12, TdpW = 170 },
+            new Gpu() { Ean = "GPU02", Manufacturer = "Nvidia", Model = "RTX 3080", Price = 700, ReleaseYear = 2020, VramGb = 10, TdpW = 320 },
+            new Gpu() { Ean = "GPU03", Manufacturer = "Nvidia", Model = "RTX 4070 Ti", Price = 800, ReleaseYear = 2023, VramGb = 12, TdpW = 285 },
+            new Gpu() { Ean = "GPU04", Manufacturer = "Nvidia", Model = "RTX 4090", Price = 1600, ReleaseYear = 2022, VramGb = 24, TdpW = 450 },
+            new Gpu() { Ean = "GPU05", Manufacturer = "AMD", Model = "RX 6700 XT", Price = 330, ReleaseYear = 2021, VramGb = 12, TdpW = 230 },
+            new Gpu() { Ean = "GPU06", Manufacturer = "AMD", Model = "RX 7900 XTX", Price = 950, ReleaseYear = 2022, VramGb = 24, TdpW = 355 },
+
+            // --- RAM MEMORIJE ---
+            new Ram() { Ean = "RAM01", Manufacturer = "Corsair", Model = "Vengeance LPX", Price = 45, ReleaseYear = 2019, CapacityGb = 16, DdrType = "DDR4", SpeedMhz = 3200 },
+            new Ram() { Ean = "RAM02", Manufacturer = "G.Skill", Model = "Trident Z Neo", Price = 75, ReleaseYear = 2020, CapacityGb = 32, DdrType = "DDR4", SpeedMhz = 3600 },
+            new Ram() { Ean = "RAM03", Manufacturer = "Kingston", Model = "Fury Beast", Price = 110, ReleaseYear = 2022, CapacityGb = 32, DdrType = "DDR5", SpeedMhz = 5600 },
+            new Ram() { Ean = "RAM04", Manufacturer = "G.Skill", Model = "Trident Z5 RGB", Price = 150, ReleaseYear = 2023, CapacityGb = 32, DdrType = "DDR5", SpeedMhz = 6400 }
+        };
+
+        Console.ReadLine();
+    }
+}
+
+class PcComponent
+{
+    public string Manufacturer { get; set; }
+
+    public string Model { get; set; }
+
+    public string FullName => $"{Manufacturer} {Model}"; 
+    public double Price { get; set; }
+
+    public int ReleaseYear { get; set; }
+
+    public string Ean { get; set; }
+}
+
+class Cpu : PcComponent
+{
+    public int Cores { get; set; }
+    public string Socket { get; set; }
+
+    public int TdpW { get; set; }
+}
+
+class Gpu : PcComponent
+{
+    public int VramGb { get; set; }
+
+    public int TdpW { get; set; }
+}
+
+class Ram :PcComponent
+{
+    public int CapacityGb { get; set; }
+
+    public string DdrType { get; set; }
+
+    public int SpeedMhz { get; set; }
+}
+

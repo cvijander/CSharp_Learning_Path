@@ -31,6 +31,7 @@
     <Project Path="WorkingWithCollections/WorkingWithCollections.csproj" Id="7a7990c9-f4e0-4482-a20b-83a4bc80fb10" />
   </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_17_Linq/">
+    <Project Path="Linq_Pc_Builder/Linq_Pc_Builder.csproj" Id="2605911f-ffc6-4586-986c-a57f2e55f80d" />
     <Project Path="UnderstandingLINQ/UnderstandingLINQ.csproj" Id="284a7621-e4ef-4f3e-8bff-6a53d8c0158b" />
     <Project Path="UnderstandingLINQ1/UnderstandingLINQ1.csproj" Id="5da2903d-6bc1-41f2-855a-ac7af6d0efe4" />
   </Folder>
