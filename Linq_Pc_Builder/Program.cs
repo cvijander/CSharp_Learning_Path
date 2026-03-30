@@ -24,7 +24,18 @@
             new Ram() { Ean = "RAM01", Manufacturer = "Corsair", Model = "Vengeance LPX", Price = 45, ReleaseYear = 2019, CapacityGb = 16, DdrType = "DDR4", SpeedMhz = 3200 },
             new Ram() { Ean = "RAM02", Manufacturer = "G.Skill", Model = "Trident Z Neo", Price = 75, ReleaseYear = 2020, CapacityGb = 32, DdrType = "DDR4", SpeedMhz = 3600 },
             new Ram() { Ean = "RAM03", Manufacturer = "Kingston", Model = "Fury Beast", Price = 110, ReleaseYear = 2022, CapacityGb = 32, DdrType = "DDR5", SpeedMhz = 5600 },
-            new Ram() { Ean = "RAM04", Manufacturer = "G.Skill", Model = "Trident Z5 RGB", Price = 150, ReleaseYear = 2023, CapacityGb = 32, DdrType = "DDR5", SpeedMhz = 6400 }
+            new Ram() { Ean = "RAM04", Manufacturer = "G.Skill", Model = "Trident Z5 RGB", Price = 150, ReleaseYear = 2023, CapacityGb = 32, DdrType = "DDR5", SpeedMhz = 6400 },
+
+
+            // --- MATIČNE PLOČE ---
+            new Motherboard() { Ean = "MB01", Manufacturer = "Gigabyte", Model = "B650 Aorus Elite", Price = 200, ReleaseYear = 2022, Socket = "AM5", FormFactor = "ATX", RamSlots = 4, SataConnectors = 4 },
+            new Motherboard() { Ean = "MB02", Manufacturer = "Asus", Model = "ROG Strix Z790-H", Price = 380, ReleaseYear = 2023, Socket = "LGA1700", FormFactor = "ATX", RamSlots = 4, SataConnectors = 4 },
+            new Motherboard() { Ean = "MB03", Manufacturer = "MSI", Model = "MAG B550 TOMAHAWK", Price = 150, ReleaseYear = 2020, Socket = "AM4", FormFactor = "ATX", RamSlots = 4, SataConnectors = 6 },
+
+            // --- NAPAJANJA (PSU) ---
+            new PowerSupply() { Ean = "PSU01", Manufacturer = "Corsair", Model = "RM850x", Price = 140, ReleaseYear = 2021, Wattage = 850, EfficiencyRating = "80+ Gold", IsModular = true },
+            new PowerSupply() { Ean = "PSU02", Manufacturer = "Seasonic", Model = "Focus GX-750", Price = 120, ReleaseYear = 2020, Wattage = 750, EfficiencyRating = "80+ Gold", IsModular = true },
+            new PowerSupply() { Ean = "PSU03", Manufacturer = "be quiet!", Model = "System Power 10", Price = 65, ReleaseYear = 2022, Wattage = 650, EfficiencyRating = "80+ Bronze", IsModular = false }
         };
 
         Console.ReadLine();
@@ -67,5 +78,23 @@ class Ram :PcComponent
     public string DdrType { get; set; }
 
     public int SpeedMhz { get; set; }
+}
+
+class Motherboard : PcComponent
+{
+    public string Socket { get; set; }
+    public string FormFactor { get; set; }
+    public int RamSlots { get; set; }
+
+    public int SataConnectors { get; set; }
+}
+
+class PowerSupply : PcComponent
+{
+    public int Wattage { get; set; }
+
+    public string EfficiencyRating { get; set; }
+    public bool IsModular { get; set; }
+    
 }
 
