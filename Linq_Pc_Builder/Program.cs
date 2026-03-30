@@ -38,6 +38,43 @@
             new PowerSupply() { Ean = "PSU03", Manufacturer = "be quiet!", Model = "System Power 10", Price = 65, ReleaseYear = 2022, Wattage = 650, EfficiencyRating = "80+ Bronze", IsModular = false }
         };
 
+
+        var allPcCompponentsAfter2021 = inventory.Where(component => component.ReleaseYear > 2021);
+
+        foreach (var item in allPcCompponentsAfter2021)
+        {
+            Console.WriteLine($"{item.Ean} {item.Manufacturer} {item.FullName}");
+        }
+
+        var amdOnly = inventory.Count(component => component.Manufacturer.ToUpper() == "AMD");
+        Console.WriteLine(amdOnly);
+
+        var any1000 = inventory.Any(component => component.Price > 1000);
+        Console.WriteLine(any1000);
+
+        var maxPrice = inventory.Max(component => component.Price);
+        Console.WriteLine(maxPrice);
+
+        var FullName = inventory.Select(component => component.FullName);
+        foreach (var item in FullName)
+        {
+            Console.WriteLine(item);
+        }
+
+        //  var fullNameLess200 = inventory.Select(component => component.FullName).Where( component => component.Price < 200);
+
+        var fullNameLess200 = inventory.Where(component => component.Price < 200).Select(component => component.FullName);
+
+        Console.WriteLine(fullNameLess200);
+
+        foreach (var item in fullNameLess200)
+        {
+            Console.WriteLine(item);
+        }
+
+       // var priceSelect = inventory.Select(component => component.Price).Where(component => component.full);
+
+        
         Console.ReadLine();
     }
 }
