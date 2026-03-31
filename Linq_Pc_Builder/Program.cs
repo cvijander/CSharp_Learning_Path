@@ -72,9 +72,23 @@
             Console.WriteLine(item);
         }
 
-       // var priceSelect = inventory.Select(component => component.Price).Where(component => component.full);
+        // var priceSelect = inventory.Select(component => component.Price).Where(component => component.full);
 
-        
+        var amdMaxtoMinOnlyNames = inventory.Where(component => component.Manufacturer.ToUpper() == "AMD").OrderByDescending(component => component.Price).Select(component => component.FullName);
+
+        foreach (var item in amdMaxtoMinOnlyNames)
+        {
+            Console.WriteLine($"{item}");
+        }
+
+        var intelNamesMore300 = inventory.Where(component => component.Manufacturer.ToUpper() == "INTEL").Where(component => component.Price > 300).Select(component => component.FullName);
+
+        foreach (var item in intelNamesMore300)
+        {
+            Console.WriteLine($"{item}");
+        }
+
+
         Console.ReadLine();
     }
 }
