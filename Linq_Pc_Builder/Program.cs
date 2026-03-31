@@ -45,22 +45,39 @@
         {
             Console.WriteLine($"{item.Ean} {item.Manufacturer} {item.FullName}");
         }
+        Console.WriteLine(allPcCompponentsAfter2021.GetType());
+
+        Console.WriteLine("*************");
 
         var amdOnly = inventory.Count(component => component.Manufacturer.ToUpper() == "AMD");
         Console.WriteLine(amdOnly);
 
+        Console.WriteLine(amdOnly.GetType());
+
+        Console.WriteLine("*************");
+
         var any1000 = inventory.Any(component => component.Price > 1000);
         Console.WriteLine(any1000);
 
+        Console.WriteLine(any1000.GetType());
+
+        Console.WriteLine("*************");
+
         var maxPrice = inventory.Max(component => component.Price);
         Console.WriteLine(maxPrice);
+
+        Console.WriteLine(maxPrice.GetType());
+
+        Console.WriteLine("*************");
 
         var FullName = inventory.Select(component => component.FullName);
         foreach (var item in FullName)
         {
             Console.WriteLine(item);
         }
+        Console.WriteLine(FullName.GetType());
 
+        Console.WriteLine("*************");
         //  var fullNameLess200 = inventory.Select(component => component.FullName).Where( component => component.Price < 200);
 
         var fullNameLess200 = inventory.Where(component => component.Price < 200).Select(component => component.FullName);
@@ -72,6 +89,10 @@
             Console.WriteLine(item);
         }
 
+        Console.WriteLine(fullNameLess200.GetType());
+
+        Console.WriteLine("*************");
+
         // var priceSelect = inventory.Select(component => component.Price).Where(component => component.full);
 
         var amdMaxtoMinOnlyNames = inventory.Where(component => component.Manufacturer.ToUpper() == "AMD").OrderByDescending(component => component.Price).Select(component => component.FullName);
@@ -80,6 +101,9 @@
         {
             Console.WriteLine($"{item}");
         }
+        Console.WriteLine(amdMaxtoMinOnlyNames.GetType());
+
+        Console.WriteLine("*************");
 
         var intelNamesMore300 = inventory.Where(component => component.Manufacturer.ToUpper() == "INTEL").Where(component => component.Price > 300).Select(component => component.FullName);
 
@@ -87,7 +111,36 @@
         {
             Console.WriteLine($"{item}");
         }
+        Console.WriteLine(intelNamesMore300.GetType());
 
+        Console.WriteLine("*************");
+
+        var mostExpensive = inventory.OrderByDescending(component => component.Price).Take(3).Select(component => component.FullName);
+
+        foreach (var item in mostExpensive)
+        {
+            Console.WriteLine($"{item}");
+        }
+        Console.WriteLine(mostExpensive.GetType());
+
+        Console.WriteLine("*************");
+        Console.WriteLine("*******************");
+
+        var firstDefault = inventory.FirstOrDefault(component => component.Ean.ToUpper() == "MB01");
+
+        Console.WriteLine($"{firstDefault.FullName}");
+
+        Console.WriteLine(firstDefault.GetType());
+
+        Console.WriteLine("*******************");
+
+        var sumPrice = inventory.Sum(component => component.Price);
+
+        Console.WriteLine($"Our sum is : {sumPrice:C}");
+
+        Console.WriteLine(sumPrice.GetType());
+
+        Console.WriteLine("*******************");
 
         Console.ReadLine();
     }
