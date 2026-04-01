@@ -30,7 +30,31 @@
     {
         foreach (var todo in todos)
         {
+            switch(todo.Status)
+            {
+                case Status.NotStarted:
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    break;
 
+                case Status.InProgress:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    break;
+
+                case Status.OnHold:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    break;
+
+                case Status.Completed:
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    break;
+
+                case Status.Deleted:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    break;
+
+
+            }
+            Console.WriteLine(todo.Description);
         }
     }
 }
