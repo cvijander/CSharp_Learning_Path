@@ -1,5 +1,58 @@
-﻿Console.WriteLine("Hello, World!");
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        List<Todo> todos = new List<Todo>()
+        {
+            new Todo { Description = "Task 1",  EstimatedHours = 6, Status = Status.Completed },
+            new Todo { Description = "Task 2" , EstimatedHours = 2, Status = Status.InProgress },
+            new Todo { Description = "Task 3" , EstimatedHours = 8, Status = Status.NotStarted },
+            new Todo { Description = "Task 4",  EstimatedHours = 12, Status = Status.Deleted },
+            new Todo { Description = "Task 5",  EstimatedHours = 6, Status = Status.Completed },
+            new Todo { Description = "Task 6" , EstimatedHours = 2, Status = Status.OnHold },
+            new Todo { Description = "Task 7" , EstimatedHours = 8, Status = Status.NotStarted },
+            new Todo { Description = "Task 8",  EstimatedHours = 12, Status = Status.Deleted },
+            new Todo { Description = "Task 9",  EstimatedHours = 6, Status = Status.Completed },
+            new Todo { Description = "Task 10" , EstimatedHours = 2, Status = Status.InProgress },
+            new Todo { Description = "Task 11" , EstimatedHours = 8, Status = Status.NotStarted },
+            new Todo { Description = "Task 12",  EstimatedHours = 12, Status = Status.OnHold },
+            new Todo { Description = "Task 13",  EstimatedHours = 6, Status = Status.Completed },
+            new Todo { Description = "Task 14" , EstimatedHours = 2, Status = Status.InProgress },
+            new Todo { Description = "Task 15" , EstimatedHours = 8, Status = Status.NotStarted },
+            new Todo { Description = "Task 16",  EstimatedHours = 12, Status = Status.Deleted },
+        };
 
+        PrintAssessment(todos);
+        Console.ReadLine();
+    }
+
+    private static void PrintAssessment(List<Todo> todos)
+    {
+        foreach (var todo in todos)
+        {
+
+        }
+    }
+}
+
+class Todo
+{
+    public string Description { get; set; }
+    public int EstimatedHours { get; set; }
+
+    public Status Status { get; set; }
+
+}
+
+
+enum Status
+{
+    NotStarted,
+    InProgress,
+    OnHold,
+    Completed, 
+    Deleted
+}
 
 
 
