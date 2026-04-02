@@ -38,6 +38,9 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_18_Enum_Switch/">
     <Project Path="EnumsAndSwitch/EnumsAndSwitch.csproj" Id="fa4704ac-473a-4929-91b7-7c67c5d2d8aa" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_19_Handling_Exceptions/">
+    <Project Path="HandlingExceptions1/HandlingExceptions1.csproj" Id="503c5f39-0589-4a45-ab63-1a8f6ad3d5ac" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
