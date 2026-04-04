@@ -32,7 +32,7 @@
         {
             // code to finalize 
             // setting object to null 
-            // c;psomg database connectisons
+            // closing database connectisons
             Console.WriteLine("Closing aplication now ...");
         }
         Console.ReadLine();

@@ -44,6 +44,10 @@
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_1_Hello_World/">
     <Project Path="BobTaborC#Fundamental/HelloWorld/HelloWorld/HelloWorld.csproj" />
   </Folder>
+  <Folder Name="/BobTabor/BobTaborFundamentals/Lession_20_Event_Driven/">
+    <Project Path="TimerExample/TimerExample.csproj" Id="9fd3df7b-87d3-406e-ac01-1b3b3b0106a2" />
+    <Project Path="WpfEvents/WpfEvents.csproj" Id="c6537d59-04b8-4750-becd-d88571b33f59" />
+  </Folder>
   <Folder Name="/BobTabor/BobTaborFundamentals/Lession_2_Variables/">
     <Project Path="Variables/Variables.csproj" Id="4d05b529-ac1c-420d-bed5-455b1b96e3df" />
   </Folder>
