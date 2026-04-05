@@ -19,11 +19,17 @@ namespace WpfEvents
         public MainWindow()
         {
             InitializeComponent();
+            button.Click += Button_Click1; 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             myLabel.Content = "Hello world";
+        }
+
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            myOtherLabel.Content = "Hello world from second label";
         }
     }
 }
