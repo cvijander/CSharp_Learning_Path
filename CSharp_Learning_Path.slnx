@@ -94,4 +94,7 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_3/">
+    <Project Path="Lession_3/Lession_3.csproj" Id="2c670a28-303d-4322-b420-3bf5739b7894" />
+  </Folder>
 </Solution>
