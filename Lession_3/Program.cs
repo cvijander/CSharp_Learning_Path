@@ -31,7 +31,10 @@
             Console.WriteLine();
             Console.WriteLine("Management has to decide to if tis worth time and the money to take this big project on");
             Console.WriteLine("They may need again to get a budget approved in the next fiscal year. That might require even more time spent upfront in analysis model.");
+            Console.WriteLine("What are expected timelines for delivery? What human resources do we have available? Do we need to hire people? Do we need to bring in a third party people");
             Console.WriteLine("All these need to be determined long before the developers are brought to start ");
+            Console.WriteLine("Now you get more and more people are involved in this process and there is a conversation going on throught a series of emails and meetings");
+            Console.WriteLine("These people cuold be internal developers that are hired directly by the company employed by the company or they can be consultants that are representing software developments shops");
 
 
 
@@ -73,7 +76,7 @@
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("End of Lesson 2! Press Enter to return to the main menu.");
+            Console.WriteLine("End of Lesson 3! Press Enter to return to the main menu.");
             Console.ResetColor();
             Console.ReadLine();
         }
