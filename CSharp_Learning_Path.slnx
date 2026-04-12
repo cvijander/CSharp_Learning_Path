@@ -98,6 +98,6 @@
     <Project Path="Lession_3/Lession_3.csproj" Id="2c670a28-303d-4322-b420-3bf5739b7894" />
   </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_4/">
-    <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="b0585abb-8852-4810-9e69-3a34dd12c384" />
+    <Project Path="ConsoleApp1/Lession4.csproj" Id="b0585abb-8852-4810-9e69-3a34dd12c384" />
   </Folder>
 </Solution>
