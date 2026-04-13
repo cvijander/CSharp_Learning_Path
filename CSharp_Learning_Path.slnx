@@ -100,4 +100,7 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_4/">
     <Project Path="ConsoleApp1/Lession4.csproj" Id="b0585abb-8852-4810-9e69-3a34dd12c384" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_5_Agile_Methodology/">
+    <Project Path="AgileMethodology/AgileMethodology.csproj" Id="6c3376a0-d51d-42d7-9a8a-6214a0655bac" />
+  </Folder>
 </Solution>
