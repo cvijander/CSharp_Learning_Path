@@ -106,4 +106,7 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_6_Lesson 6 - The Process can Affect the Design/">
     <Project Path="The process can affect the design/The process can affect the design.csproj" Id="8a193841-1412-44dd-a8f3-569fa8f26500" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_7_Abstracting the Real World into a Domain Model/">
+    <Project Path="Domain model/Domain model.csproj" Id="0bc13be3-068f-4ce4-b094-464fb7e59d4a" />
+  </Folder>
 </Solution>
