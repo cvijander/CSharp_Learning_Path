@@ -109,4 +109,7 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_7_Abstracting the Real World into a Domain Model/">
     <Project Path="Domain model/Domain model.csproj" Id="0bc13be3-068f-4ce4-b094-464fb7e59d4a" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_8_Establishing Roles and Delegating Responsibilities to Objects/">
+    <Project Path="Roles/Roles.csproj" Id="2f669ad9-4cd5-4bec-b75f-d089ca4d828f" />
+  </Folder>
 </Solution>
