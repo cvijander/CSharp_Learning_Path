@@ -85,6 +85,9 @@
     <Project Path="Strings/Strings.csproj" Id="130c771b-4257-4759-8f88-1ae08f39ca53" />
   </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/" />
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/ConsoleApplication/">
+    <Project Path="ThinkingLikeAnOOPConsole/ThinkingLikeAnOOPConsole.csproj" Id="efb26b5a-a52f-401d-9d30-4fa01cefe250" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Helpers/">
     <File Path="UIHelpers.cs" />
   </Folder>
