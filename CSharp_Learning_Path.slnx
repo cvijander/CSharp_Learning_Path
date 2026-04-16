@@ -115,4 +115,7 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_8_Establishing Roles and Delegating Responsibilities to Objects/">
     <Project Path="Roles/Roles.csproj" Id="2f669ad9-4cd5-4bec-b75f-d089ca4d828f" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_9_Contract,Interfaces and Collaborations/">
+    <Project Path="ConstactInterfacesCollaborations/ConstactInterfacesCollaborations.csproj" Id="4da185bc-5f1a-47e1-bd10-acaf08832a2a" />
+  </Folder>
 </Solution>
