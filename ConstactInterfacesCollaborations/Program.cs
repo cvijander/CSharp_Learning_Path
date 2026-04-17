@@ -32,16 +32,19 @@
 
             Console.WriteLine("\"No man is an island \"");
             Console.WriteLine("When you think of object you shoudl be thinking in those terms as well. Each object has responsabilities in its conceptual society and it has to collaborate with other objects in order to perform work");
-            Console.WriteLine("In order to collaborate there has to be some sort of contract upfront, is the conceptual world this takes the form of method signatures");
+            Console.WriteLine("In order to collaborate there has to be some sort of contract upfront, in the conceptual world this takes the form of method signatures");
             Console.WriteLine("It also take the form of interfaces");
             Console.WriteLine("We have defined a contract, we implemented a contract, and then we called a method ");
-            Console.WriteLine("We are not worried about how it is implemented, just the fact thet if we need this functinlaty, then we have to make sure that we are relying on this interface");
-            Console.WriteLine("And then th");
+            Console.WriteLine("We are not worried about how it is implemented, just the fact thet if we need this functionality, then we have to make sure that we are relying on this interface");
+            Console.WriteLine("And then the consumer and the implementer of that interface can work together, can collaborate, can excange messages");
 
-            Console.WriteLine("prodji zadnji mutut !!!");
+            
 
 
             Console.ReadLine();
         }
     }
 }
+
+
+// https://www.youtube.com/watch?v=gXTAznEdPvM&list=PLqT8wAi-pOx7X3i6Vynm57MCwFpQWJdP9&index=9
