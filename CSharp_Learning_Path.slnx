@@ -97,6 +97,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_10_Collaborations and Object Role Stereotypes/">
     <Project Path="Collaboration/Collaboration.csproj" Id="e3b9b982-b452-439d-b9e7-635bf6e53046" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_11_Coll Conditions of Use and After Effect Guarantees/">
+    <Project Path="Conditions/Conditions.csproj" Id="52377533-a654-4b4f-835c-258ae0bc6d8b" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>

@@ -37,7 +37,7 @@
             Console.WriteLine("We might say that an object is smart when it both encapsulates data and that data affect the desisions that particular object makes and how fulfills its responsability");
             Console.WriteLine("We might say that object is pesky object because it has to ask its collaborators for every little detail to perform its responsabilities");
             Console.WriteLine();
-            Console.WriteLine("It is tral and error process whenever you are designing objects in their collaborations");
+            Console.WriteLine("It is trial and error process whenever you are designing objects in their collaborations");
             Console.WriteLine();
             Console.WriteLine("A well designed object supports a clearly defined role");
             Console.WriteLine("Design is an iterative and inceremental process of envisioning objects and their responsabilities and inventing flexible collaborations");
