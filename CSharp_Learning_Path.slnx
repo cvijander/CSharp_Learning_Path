@@ -100,6 +100,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_11_Coll Conditions of Use and After Effect Guarantees/">
     <Project Path="Conditions/Conditions.csproj" Id="52377533-a654-4b4f-835c-258ae0bc6d8b" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_12_Domain vs Application Specific Objects/">
+    <Project Path="DomainVSApplication/DomainVSApplication.csproj" Id="dfd3b056-e725-479a-a9b5-44a10544cc9f" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
