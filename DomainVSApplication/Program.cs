@@ -48,15 +48,6 @@
             Console.WriteLine("Ideally, you would collect those object togeher, separating them into neighborhoods of concerns , and then package them up for reuse");
 
 
-
-
-
-
-
-
-
-
-
             Console.ReadLine();
         }
     }

@@ -103,6 +103,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_12_Domain vs Application Specific Objects/">
     <Project Path="DomainVSApplication/DomainVSApplication.csproj" Id="dfd3b056-e725-479a-a9b5-44a10544cc9f" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_13_Components_as_Neighborhoods_of_Objects/">
+    <Project Path="ComponentsAsNeighborhoodsOfObjects/ComponentsAsNeighborhoodsOfObjects.csproj" Id="7b9d9482-d740-467a-99b5-83a5d5692b96" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
