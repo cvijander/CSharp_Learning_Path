@@ -106,6 +106,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_13_Components_as_Neighborhoods_of_Objects/">
     <Project Path="ComponentsAsNeighborhoodsOfObjects/ComponentsAsNeighborhoodsOfObjects.csproj" Id="7b9d9482-d740-467a-99b5-83a5d5692b96" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_14_Architectural Layers of Responsibility using Objects/">
+    <Project Path="ArchitectualLayers/ArchitectualLayers.csproj" Id="6acf1dd3-7e3e-4bbd-9766-85ed5dea5190" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
