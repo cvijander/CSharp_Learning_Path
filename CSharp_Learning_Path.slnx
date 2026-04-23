@@ -109,6 +109,12 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_14_Architectural Layers of Responsibility using Objects/">
     <Project Path="ArchitectualLayers/ArchitectualLayers.csproj" Id="6acf1dd3-7e3e-4bbd-9766-85ed5dea5190" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_15_Designing_Objects_and_Interactions/">
+    <Project Path="Designing Objects adn interactions/Designing Objects adn interactions.csproj" Id="a0ed0ab1-44b0-416a-96bf-839fb8f01d93" />
+  </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_16_Encapsulation/">
+    <Project Path="Encapsulation/Encapsulation.csproj" Id="ca50c065-b8ac-4f57-9a9b-4387e7d1d3de" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
