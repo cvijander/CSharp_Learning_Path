@@ -116,6 +116,9 @@
     <Project Path="Encapsulation/Encapsulation.csproj" Id="ca50c065-b8ac-4f57-9a9b-4387e7d1d3de" />
     <Project Path="EncapsulationExample/EncapsulationExample.csproj" Id="5f111c3f-d424-4130-9435-eeaf6247c544" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_17_Why_implementation_inheritance/">
+    <Project Path="Inheritance/Inheritance.csproj" Id="df7dc659-aa7d-4d70-a37b-cffd0c0584b6" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
