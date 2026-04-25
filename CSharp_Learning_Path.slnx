@@ -91,9 +91,6 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Helpers/">
     <File Path="UIHelpers.cs" />
   </Folder>
-  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_1/">
-    <Project Path="Lession 1 intro/Lession 1 intro.csproj" Id="a9a08cb8-7ae2-4143-bc76-b7d23fa04d09" />
-  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_10_Collaborations and Object Role Stereotypes/">
     <Project Path="Collaboration/Collaboration.csproj" Id="e3b9b982-b452-439d-b9e7-635bf6e53046" />
   </Folder>
@@ -119,13 +116,16 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_17_Why_implementation_inheritance/">
     <Project Path="Inheritance/Inheritance.csproj" Id="df7dc659-aa7d-4d70-a37b-cffd0c0584b6" />
   </Folder>
-  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2/">
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_1_IntroMainPage/">
+    <Project Path="Lession 1 intro/Lession 1 intro.csproj" Id="a9a08cb8-7ae2-4143-bc76-b7d23fa04d09" />
+  </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2_Establishing Crucial Metaphors/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
-  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_3/">
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_3_Application Lifecycle and Object Orientation/">
     <Project Path="Lession_3/Lession_3.csproj" Id="2c670a28-303d-4322-b420-3bf5739b7894" />
   </Folder>
-  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_4/">
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_4_Big Upfront Design Object Oriented Analysis and Design/">
     <Project Path="ConsoleApp1/Lession4.csproj" Id="b0585abb-8852-4810-9e69-3a34dd12c384" />
   </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_5_Agile_Methodology/">
