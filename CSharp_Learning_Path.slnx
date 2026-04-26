@@ -116,6 +116,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_17_Why_implementation_inheritance/">
     <Project Path="Inheritance/Inheritance.csproj" Id="df7dc659-aa7d-4d70-a37b-cffd0c0584b6" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_18_Why_Interface_Inheritance/">
+    <Project Path="InterfaceInheritance/InterfaceInheritance.csproj" Id="afa3b543-648b-4fe4-8784-24e35e6ef0a3" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_1_IntroMainPage/">
     <Project Path="Lession 1 intro/Lession 1 intro.csproj" Id="a9a08cb8-7ae2-4143-bc76-b7d23fa04d09" />
   </Folder>
