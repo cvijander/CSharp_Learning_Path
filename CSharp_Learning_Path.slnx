@@ -125,6 +125,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_1_IntroMainPage/">
     <Project Path="Lession 1 intro/Lession 1 intro.csproj" Id="a9a08cb8-7ae2-4143-bc76-b7d23fa04d09" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_20_Understanding_Relationships_Coupling_And_Dependency/">
+    <Project Path="Understanding relationships/Understanding relationships.csproj" Id="0d6bfc71-7b66-42ed-a08d-c1c97e16f632" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2_Establishing Crucial Metaphors/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
