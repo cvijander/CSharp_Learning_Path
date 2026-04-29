@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("People eho are codependent");
+            Console.WriteLine("People who are codependent");
             Console.WriteLine("Wikipedia says excessive reliance on othe people for approval and a sense of identity leads to all sorts of issues for humans");
             Console.WriteLine("They become enablers for each other with regards  to substance abuse like alcoholism, drugs, gambling, addictions");
             Console.WriteLine("Less over like immaturity or irresponsibility or even underachievement");
@@ -28,18 +28,43 @@
             Console.WriteLine("Because we used the new keyword to create directly create a concrete object from one layer in another layer ");
             Console.WriteLine("This will limit us in several different ways ");
             Console.WriteLine("It is going to limit us our ability to swap out implementations of our persistent objects, which in turn limits our ability to unit test our domain object and grow confident in its ability to implement the fine print");
-            Console.WriteLine("We will solve it thorough inversion of control and dependency injection");
+            Console.WriteLine("We will solve it through inversion of control and dependency injection");
             Console.WriteLine();
             Console.WriteLine("We have a car, which I would classify as a domain object.");
             Console.WriteLine("But we see it does have a method where it is creating a new incance of this other class called CarPersitence to file ");
-            Console.WriteLine("Ant this is what I would call an application specific object");
-            Console.WriteLine("The object would probably live in another project in our solution");
+            Console.WriteLine("And this is what I would call an application specific object");
+            Console.WriteLine("This object would probably live in another project in our solution");
             Console.WriteLine("It would be typically be a class library that we would assign  the responsability of being a persistence layer");
             Console.WriteLine();
-            Console.WriteLine("");
-            Console.WriteLine("414 -1057 ali pogledaj ponovo");
+            Console.WriteLine("From an architectual standpoint you typically wouldn't have these in the same file");
+            Console.WriteLine("But you have two fundamentally different concerns. One is domain, one is application specific");
+            Console.WriteLine("In our example we created a new instance of this, and a created an interbouindary relationship by gluing together our domain class with our application specific class");
+            Console.WriteLine();
+            Console.WriteLine("The problem with this , is that if we ever want to replace the way that this class is persisted. This will kind of hard to do because we have glued our domain class directly yo our persistence");
+            Console.WriteLine("They are across boundaries , and yet now they have a weird codepenndancy where one has to be there for the other one to work");
+            Console.WriteLine("That the case where we have a domain specific object that tightly coupled to an application specific object that is in another architectual layer");
+            Console.WriteLine();
+            Console.WriteLine("Two domain specific objects that just happen to be in two different domain responsabilities");
+            Console.WriteLine("Domain specific object in accounting and a domain specific object in tax and the accounting object creates an instance of tax in that case");
+            Console.WriteLine("You can do that, but it is still undesirable . That kind of coupling will shorten the lifespan of the application ");
+            Console.WriteLine("Futher more we are not able to isolate that domain object for unit test");
+            Console.WriteLine("Sometimes it is difficult to set up integrated tests between inner boundary layers");
+            Console.WriteLine("That is why is so important to make sure that there is not these strong coupled objects ");
+            Console.WriteLine("One reason is for swithin the implementation, and the second reason is for unit testing");
+            Console.WriteLine();
+            Console.WriteLine("We can see that hight coupling across domain or application specific object boundaries is problematic because it makes our application brittle and untrustworthly and furthermore we are not able to swap out implementations");
+            Console.WriteLine("So coupling across domain responsabilities can be problematic");
+            Console.WriteLine();
+            Console.WriteLine("Solid - S  , single responsibility principle it states the our object should have only one reason to change");
+            
+
+
+
+
+            
 
             var car = new Car() { Make = "GMC", Model = "Yukon", Year = 2013 };
+            car.Save();
 
 
             Console.WriteLine("Finished");
