@@ -128,6 +128,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_20_Understanding_Relationships_Coupling_And_Dependency/">
     <Project Path="Understanding relationships/Understanding relationships.csproj" Id="0d6bfc71-7b66-42ed-a08d-c1c97e16f632" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_21_Understanding relationship inverrsion of control and dependency injection/">
+    <Project Path="InversionOfControlDependencyInjection/InversionOfControlDependencyInjection.csproj" Id="8b245071-5922-47a8-b665-dd3539ba6579" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2_Establishing Crucial Metaphors/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
