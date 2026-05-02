@@ -14,26 +14,48 @@
             Console.WriteLine();
             Console.WriteLine("First thing is we are going to define an interface. And this is from the perspective of the consumer of the service");
             Console.WriteLine("Car is going to consume the services of a persistence object. So it needs to be the one defining what the contract terms are ");
-            Console.WriteLine("Right there between car nad car persistence , we will put interface ");
+            Console.WriteLine("Right there between car and car persistence , we will put interface ");
             Console.WriteLine("The next step is then for any class that wants to be persistence for the car it need to implement this interface");
             Console.WriteLine("We are allowing to CarPersistence class to inherit interface");
             Console.WriteLine("Now in the car class we are going to remove a direct dependency ");
             Console.WriteLine("In class car we are going to construct dependency injection ");
-            Console.WriteLine("In class car we are defining \"  private IICarPersistence _carPersistence; \"");
-            Console.WriteLine("With this we created a private field , this will hold on to a reference of what object we are going to use to do the persistence");
+            Console.WriteLine("In class car we are defining \"  private IICarPersistence _carPersistence; \" we created a private field ");
+            Console.WriteLine("This will hold on to a reference of what object we are going to use to do the persistence");
             Console.WriteLine("Here in constructor , i am going to demand that you give me that object ");
             Console.WriteLine("We are going to pass it in as an argument to the constructor and then we will hold to an reference to it ");
             Console.WriteLine("In Car constructor we are passing CarPersistece  and inside we are asising carPersistence to _carPersistence");
             Console.WriteLine("Now we can change to var file = _carPerisitance  or even beter to only _carPersisitence.SaveCar()");
+            Console.WriteLine("We are changint to readonly  .. now  \" private readonly IcarPersistence _carPersisnce field \"");
+            Console.WriteLine("So now nothing else beside a constructor can modift our private instance of our dependency");
+            Console.WriteLine();
+            Console.WriteLine("SUMMARY ");
+            Console.WriteLine("W broke the dependency, the direct dependency between two different layers of our architecture");
+            Console.WriteLine("The car should never  have had direct codependant relationship with our car persistance to file class");
+            Console.WriteLine("So to break the dependecy we introduced an inteface and we has car persistence to file implement tha interafce ");
+            Console.WriteLine("THen we in our constructor we passed we asked for instance or our dependencies ");
+            Console.WriteLine("We inverted the control instead of car controlling car persistence to file , it is now receiving its dependency ");
+            Console.WriteLine("So we have inverted the flow of control in our application so that we can still call our save car method , but the mechanism is completely different now");
+
+            Console.WriteLine();
+            Console.WriteLine("There are more ways to dependency injection ");
+            Console.WriteLine("First is constructor dependency injection");
+            Console.WriteLine("Property dependency injection");
+            Console.WriteLine("IOC container , inversion of control containter ");
 
 
 
 
-            Console.WriteLine("251 - 1317");
+
+            Console.WriteLine("1012 - 1317");
 
 
-
-            var car = new Car() { Make = "GMC", Model = "Yukon", Year = 2013 };
+            var carPersistence = new CarPersistenceToFile();
+            var car = new Car(carPersistence)
+            { 
+                Make = "GMC", 
+                Model = "Yukon",
+                Year = 2013
+            };
             car.Save();
 
 
@@ -50,7 +72,7 @@
 
     class Car
     {
-        private IICarPersistence _carPersistence;
+        private readonly IICarPersistence _carPersistence;
         
         public Car (IICarPersistence carPersistence)
         {
@@ -67,9 +89,11 @@
         {
             // var file = new CarPersistenceToFile();
 
-            var file = _carPersistence;
+            // var file = _carPersistence;
 
-            file.SaveCar(this);
+            _carPersistence.SaveCar(this);
+             
+            // file.SaveCar(this);
         }
     }
 
@@ -84,9 +108,9 @@
         public void SaveCar(Car car)
         {
             var record = $"{car.Make} {car.Model} {car.Year}";
-            string path = @"C:\Couplingecxample";
+            string path = @"D:\Dev\csharp\CSharp_Learning_Path";
             DirectoryInfo di = Directory.CreateDirectory(path);
-            System.IO.File.WriteAllText(@"C:\CouplingExample\Car.txt", record);
+            System.IO.File.WriteAllText(@"D:\Dev\csharp\CSharp_Learning_Path\Car.txt", record);
         }
     }
 }
