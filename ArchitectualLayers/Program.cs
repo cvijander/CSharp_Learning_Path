@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           
             Console.WriteLine("You can also split up objects into neighborhoods for the purpose of divvying up worload between team members or entire team");
             Console.WriteLine("There was some natural segregation that will occur based on segragation of the objects based on the type of messages that will be sent and the collaboration that will be shared between objects");
             Console.WriteLine("There will be collaboration preferences that objects demonstrate based on the commonality of the work that certain objects will be tasked with handling");

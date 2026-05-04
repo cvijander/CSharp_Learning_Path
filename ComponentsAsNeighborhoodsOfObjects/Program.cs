@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
             Console.WriteLine("Sometimes it is a good idea to package neighborhhods of collaborating objects together inside if component for redistribution or for sharing");
             Console.WriteLine("Component is simply just a reusable package of objects that we defined");
             Console.WriteLine("In a different programming languages and operating system and frameworks this will take different forms");

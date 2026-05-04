@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
             Console.WriteLine("Object oriented programming is all about boundaries and relationships and communication across those bondaries");
             Console.WriteLine("Through the relationships that objects have with one another");
             Console.WriteLine();

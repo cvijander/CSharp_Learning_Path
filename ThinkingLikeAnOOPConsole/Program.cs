@@ -1,4 +1,6 @@
-﻿namespace ThinkingLikeAnOOPConsole
+﻿using System.Runtime.ConstrainedExecution;
+
+namespace ThinkingLikeAnOOPConsole
 {
     internal class Program
     {
@@ -528,6 +530,652 @@
 
             PressEnterForMainMenu();
         }
+
+        public static void ConditionsOfUseAndAfterEffectGuarantee()
+        {
+
+            Console.Clear();
+
+
+            Console.WriteLine("Collaborations are based on contracts.");
+            Console.WriteLine("A contract can be explicity defined in terms of a \"method signature\" or an \"interface\"");
+            Console.WriteLine("But a contract can be explicity express in terms of its conditions of use and its after effect guarantiees");
+            Console.WriteLine("So as the book says, this is fine print of the contract");
+            Console.WriteLine("Sometimes this is expressed in terms of data types");
+            Console.WriteLine("Since C# is a strongly typed language, it would be difficult to send data to a collaborator that is of the incorrct data type");
+            Console.WriteLine("It is defined in its method sigantures the types of input that it will accept");
+            Console.WriteLine("In other circumstances like in a dynamic situation , we may not know ahead of time and so it would have to be the fine print would have to be expressed throught runtime exception");
+            Console.WriteLine();
+            Console.WriteLine("There are implicit ways of enforcing the fine print of the contract and that one of the implicit ways ytou can to that is throught structured exception handling in C#");
+            Console.WriteLine("So every component has to trust its collaborators to be able to do the work that it been assigned to do.");
+            Console.WriteLine("We have to be able objects have to to able to trust one another");
+            Console.WriteLine("So this verification is usually in the form of input validation");
+            Console.WriteLine("We are cheking to ensure that the data type is correct data if dynamic types are involved");
+            Console.WriteLine("We are checking to ensure that the data is not null as it comes in through our method signature");
+            Console.WriteLine("We are checking to ensure that data falls within accepted range of boundaries and so on");
+            Console.WriteLine();
+            Console.WriteLine("Ideally there would be some declarative way to include this fine print up front");
+            Console.WriteLine("Usually it is just sufficient to just use existing exception objects that are buil into NET framework or create custom exceptions that are based on system.exceptions");
+            Console.WriteLine("We rely on C# try catch and finally yo safeguard collaborative messages to ensure that they are successful and that they dont violate the fine print of the constract");
+            Console.WriteLine("Then finally i guess another way to make sure that objects abide by the fine print of the contract is through unit testing");
+            Console.WriteLine("We can make sure that as we refactor our code over time we haven't regressed and introduced some violation of the fine print of the contract for a particular method in our object");
+            Console.WriteLine();
+            Console.WriteLine("I suppose you caould say each object should provide and after effect guarantee");
+            Console.WriteLine("You give me valid input, i guarantee the output");
+            Console.WriteLine("We explicity define the after effect guarantees contractually in our method return types");
+            Console.WriteLine("We are back to we are acceptin certain input types and we are returnign values of a certain output type. THat only garanties the data type.");
+            Console.WriteLine("That' s that may not be enough. Here again we have to make a decision and it usually comes down to how much should the object trust its collaborators ");
+            Console.WriteLine("If i dont trust  them, then you probably shoud add a try catch around every single call that ever made outside of your object  at that point you can verify incoming data and you can verify ehat comes out of the object what is returned by the method call ");
+            Console.WriteLine("But probably the best way to guarantee the after effect of your object is to actually build unit tests");
+            Console.WriteLine("And the more unit test you write with sample input code and that produce the desired result, you and your team members will begin to trust the objects to do their job");
+            Console.WriteLine("And again if we make a change you can re test the regression make sure the we havent fallen back and actually broken something");
+            Console.WriteLine("Ideally , in order for there to be collavoration, there has to be trust. The trust that you are going to give me what i need, and thust that i am going to return back to you what you need");
+            Console.WriteLine("The way that we establish trust is to verify our inputs and our outputs");
+            Console.WriteLine("We can do that live at runtime or we can do it ahead of time using unit tests");
+
+            PressEnterForMainMenu();
+        }
+
+
+        public static void DomainVSApplicationSpecificObjects()
+        {
+            Console.Clear();
+
+            Console.WriteLine("The principle of separation of concerns.");
+            Console.WriteLine("The notion of the separation of concerns is true at so many different levels");
+            Console.WriteLine("Whether it be from a macro or a micro perspective");
+            Console.WriteLine("At an architectual level, the way that we used it previously ,we saw how useful that idea was");
+            Console.WriteLine("but now we are going to apply to a much granular level with regards to objects and responsabilities that we assign to them");
+            Console.WriteLine();
+            Console.WriteLine("SOLID pattern -");
+            Console.WriteLine("each letter is an acronym for one principle of object-oriented programming from an object design perspective");
+            Console.WriteLine("S - single responsability principle (SRP) - separation of concerns - A class should have only one reason to change, meaning it should perform exactly one job ");
+            Console.WriteLine("O - Open/closed principle (OCP)  - Software entities (classes, modules,functions ) should be open for extension, but closed for modification");
+            Console.WriteLine("L - Liskov substituiton principle (LSP) - Derived class must be completely substituatable for their base classes without breaking the application");
+            Console.WriteLine("I - Interface segregation principle (ISP) - A class should not be forced to implement interfaces and methods that it does not use");
+            Console.WriteLine("D - Dependency Inversion Principle (DIP) - High-level modules should depend on avstraction (like interfaces) not on concrete implementations");
+            Console.WriteLine();
+            Console.WriteLine("Than I just want to talk about the different roles that object can play in a system and talk about how we separate concerns out by the type of role ");
+            Console.WriteLine("Now this is not object stereotyping. ");
+            Console.WriteLine("I m looking at this now from a different facet and there are really two different roles that an object can play . There are \"domain specific objects\" and there are \"application specific object\"");
+            Console.WriteLine("Domain specific object");
+            Console.WriteLine("Domain specific objects are objects that are used to model real world into an abstraction that we use in our conceptual machinery to create a solution");
+            Console.WriteLine("Application specific object");
+            Console.WriteLine("Those are objects that are required in order to perform system related tasks. We will use them for persistence for display , whether it be on a computer display or web page");
+            Console.WriteLine();
+            Console.WriteLine("Domain specific objects are born from an analysis of our problem domain nad these represent again abstractions of the real world specific to our particular type of application");
+            Console.WriteLine("Domain objects represent concepts that will probably be familiar to users and exprerts within given specific field of interest");
+            Console.WriteLine("The domain is made up of information and services that the user need along withs structures that can relate the two both information and services");
+            Console.WriteLine("There are also containters for domain logic or business logic code , logic that is expressed purely in domain terms");
+            Console.WriteLine("You can see it those instances, we are speaking now purely in terms of terminology that could be understood by domain expert, a tax expert etc ");
+            Console.WriteLine("So those are going to be domain objects. Thay are concerned about the problem domain, not about all the other junk that has to go on to make this into a computer system");
+            Console.WriteLine();
+            Console.WriteLine("That's where application specific objects come into play .Application specific objects are born purely from our own imagination and are kind of like bridges between the domain world and the software world");
+            Console.WriteLine("We are going to write these application specific objects to kind of wrap around the computer world so that it can interact with our domain world");
+            Console.WriteLine("We will create a set of objects that interface with the network with the screen,output some file format like HTML or XML , or JSON. It will act with interact with the database for persistence or some cashing etc");
+            Console.WriteLine("That the job of an application specific object to kind of be that bridge between the business world and the physical world");
+            Console.WriteLine("Entity framework is really a good example of marrying these two world together. Some of this is done automatically for you. It will generate code for you based on some tooling in Visaul studio that will make this whole process a little bit easier");
+            Console.WriteLine();
+            Console.WriteLine("We may have other objects that perform the role of coordination between the domain and the physical computer system Api. We usually cal those \"Services\"");
+            Console.WriteLine("WE may have still other objects that perform more utilitarien functions in the system. This might be a good candidate for reuse ");
+            Console.WriteLine("If we need to process a given file in a specific way in our system, there is a cnahce that other people in our organization might need that same processing feature");
+            Console.WriteLine("They may need to save the data in a specific file format specific ti your company or maybe just, a file format that' new and nobody else has built a library around");
+            Console.WriteLine("And others can then gain the benefit of it by you taking those application specific objects and kind of packaging them up in a certain way and then being able yo share those object in a package with orhers");
+            Console.WriteLine("Great example of this is actually JSON.NET  by James Newton King of Newtonoft - even Microsoft new API rely on JSON.NET for handling JSON");
+            Console.WriteLine("Ideally, you would collect those object togeher, separating them into neighborhoods of concerns , and then package them up for reuse");
+
+
+
+            PressEnterForMainMenu();
+        }
+
+
+        public static void ComponentsAsNeighborhoodsOfOBjects()
+        {
+            Console.Clear();
+
+
+            Console.WriteLine("Sometimes it is a good idea to package neighborhhods of collaborating objects together inside if component for redistribution or for sharing");
+            Console.WriteLine("Component is simply just a reusable package of objects that we defined");
+            Console.WriteLine("In a different programming languages and operating system and frameworks this will take different forms");
+            Console.WriteLine();
+            Console.WriteLine("In the .NET wolrd it usually take the form of \"Class library\"");
+            Console.WriteLine("You  have a class library project. When you compile a class library project, it is going to create a net assembly");
+            Console.WriteLine("Typically, the net assembly will have a DLL file extension. Inside that assembly, we have a number of classes");
+            Console.WriteLine("We defined a neighborhood of classes that all kind of contribute to do something meaningful");
+            Console.WriteLine("Like Newtonoft's JSON.NET library - this is a great example of functionality of classes that were compiled together into a component for redistribution");
+            Console.WriteLine();
+            Console.WriteLine("We also get in .NET world a NuGet - for a distribution from a centralized repository version and dependency management");
+            Console.WriteLine("Reuse is one of the benefits of object-oriented programming ");
+            Console.WriteLine("This used to be considered the holy grail of object-oriented programming . We write it once, we will never have to write it again");
+            Console.WriteLine("It took time and a lot of failuires. That is why we have principles that we have today because a lot of lessons were learned in that time");
+            Console.WriteLine("But it would no longer weas the holy grail. It kind of became something that everybody said was impossible to achieve in reality");
+            Console.WriteLine("The same is true with neighborhoods of objects. Object should stay in their neighborhood based on their zoning or their purpose.");
+            Console.WriteLine("Now in practical terms i suppose it means first of all that ideally components shoud contain either domain specific objects od application specific objects");
+            Console.WriteLine("But not both, when you are mixing that boundary then you are definitily oversteping two zones");
+            Console.WriteLine();
+            Console.WriteLine("Second implication is that i think ideally components shoudl be narrowly foacused on a very specific task");
+            Console.WriteLine("Third thing to consider is that ideally component should define interfaces that allow its dependencies to be sent or delivered or injected into it");
+            Console.WriteLine();
+            Console.WriteLine("Dependency injection and inversion of control");
+            Console.WriteLine();
+            Console.WriteLine("The fourth observation along these lines is that ideally components should be composed if neighborhoods of objects that are engaged in similar work or have similar goals");
+            Console.WriteLine();
+            Console.WriteLine("These sorts of things, these neightborhood associations, these zoning laws, will begin to reveal themselves when we begin to look at the types of messages that are going to be excanged betwwen objects");
+            Console.WriteLine("Ther will be some natural organic segregation of components based on their common goals");
+            Console.WriteLine("Idiom - birds of a feather flock together - should be observed and shoud be honored whnoever we are thinking about packaging classes, objects into own neightborhoods for reuse ");
+            Console.WriteLine("Not only does this keep collaborating objects in their own neighborhoods and help reusability, but it is also a mechanism that can be used for human collaboration");
+            Console.WriteLine();
+            Console.WriteLine("The Ability to divide up a large piece of work and conquer it with several different members or teams, this is one of the things that makes object-oriented programming so appeling");
+            Console.WriteLine("It is all possible whenver we are planning ahrad of time and designing our objects and putting them in their natural neighboroods and then repacking those neightborhoods into components for reusability");
+
+
+
+            PressEnterForMainMenu();
+        }
+
+        public static void ArchitectualLayersOfResposnabilityUsingObjects()
+        {
+            Console.Clear();
+
+
+
+            Console.WriteLine("You can also split up objects into neighborhoods for the purpose of divvying up worload between team members or entire team");
+            Console.WriteLine("There was some natural segregation that will occur based on segragation of the objects based on the type of messages that will be sent and the collaboration that will be shared between objects");
+            Console.WriteLine("There will be collaboration preferences that objects demonstrate based on the commonality of the work that certain objects will be tasked with handling");
+            Console.WriteLine("Architectual perspective that a layer is composed of several collaborating components that are tasked with the same sort of work but more from a system perspective");
+            Console.WriteLine("The classic breakdown is persistence, domain layer, presentation, web services, things of that nature");
+            Console.WriteLine();
+            Console.WriteLine("When it comes to domain objects you may have some natural divisions between the tasks of the domain objects related to their business function");
+            Console.WriteLine("The fact of the matter is that these components all fit into a layer of our software called the domain layer");
+            Console.WriteLine("Application specific objects live in components that can fit into the persistence layer, the presentation layer, a web services layer");
+            Console.WriteLine();
+            Console.WriteLine("So when diving up the responsabilities of the system and assigning them to individual objects we have to keep in mind that there are really two perspective");
+            Console.WriteLine("First of all there is the domain responsability");
+            Console.WriteLine("Second there is the application responsability");
+            Console.WriteLine("And inside of the application specific responsability, there might be objects that know how to handle specific object, or domain object or component from a system perspective");
+            Console.WriteLine();
+            Console.WriteLine("ARCHITECTUAL LAYERS OF RESPONSABILITY");
+            Console.WriteLine("Matrix of Application-Specific and Domain-Specific Objects by Architectual Layer ");
+            Console.WriteLine("              | Accounting              |    Marketing             |      Retail              |   Tax            <- Domain Responsability ");
+            Console.WriteLine("Presentation  | Application Objects     |   Application Objects    |    Application Objects   |   Application Objects ");
+            Console.WriteLine("Domain        | Domain Objects          |   Domain Objects         |    Domain Objects        |   Domain Objects   ");
+            Console.WriteLine("Persistence   | Application Objects     |   Application Objects    |    Application Objects   |   Application Objects ");
+
+            Console.WriteLine();
+            Console.WriteLine("There is a matrix of sorts that begins to evolve on one axis you have the domain responsability and on the other axis you have the application responsability");
+            Console.WriteLine("Each of resulting squares that you get  , they represent a component of objects that are build to handle that particular responsability");
+            Console.WriteLine("Each of resulting rows in that diagram are a layer of system responsability whether presentation domain etc  ");
+            Console.WriteLine("Each of resulting columns represent a slice or a spike of application responsability from a domain perspective");
+            Console.WriteLine("It creates a bunch of squares and at the border of each square , that repsersents a logical place where interfaces would exist");
+            Console.WriteLine();
+            Console.WriteLine("Interfaces between different components in the various areas of domain layer and then obviously interfaces between layers as well between the persistence and the domain and trhe presentation");
+            Console.WriteLine();
+            Console.WriteLine("We are really talking about building some slice of the application, a fully working set of features that span all the architectual layers");
+            Console.WriteLine("Building those classes and components that will interact to perform some subset og all the features that we exprect to see in final application and is so doiung we are provdinig a concrete example of an application throught all the architectual layers");
+            Console.WriteLine("It will demonstate the interaction of the component neightborhoods across all the parts of the system to create a mini application that can demonstate to the end user or the project sponsor that hey the application is working");
+            Console.WriteLine("But it will also be beneficial in so much that it will demonstrate to other developers on the team how the application will be architected in a very tanglible way");
+            Console.WriteLine("We can use that to see all of the layers, all of the components come together to build an entire application");
+            Console.WriteLine();
+            Console.WriteLine("The objects will collaborate mostly within their own layer and typically even within their own neighborhoods , by functionality, by square");
+            Console.WriteLine("In any application when objects reside in different layers and they need to collaborate then client objects are usually above server objects ");
+            Console.WriteLine("THe message will start at the top and they will flow mostly downward");
+            Console.WriteLine("Information however will flow mostly or result will flow mostly upwards");
+            Console.WriteLine("And then when messages flow up in those rare cases where that happens, client objects are in lower layers and they are coupled to their server objects");
+            Console.WriteLine("This usually menas that there is some eventing mechanism in play there");
+            Console.WriteLine();
+            Console.WriteLine("Only the topmost layer and the bottom most layer are really are what you woulkd say are exposed to the outside world");
+            Console.WriteLine("The top the presentation layer, at the bottom the persistence layer");
+            Console.WriteLine("Those are both platform specific");
+            Console.WriteLine("On the top you have to display components, whether that be with HTML,WPF or Xamarian etc ");
+            Console.WriteLine("And then on very bottom you have device and external system interfaces, whether it to be the network, to a database server, to a cashicn mechanism");
+            Console.WriteLine();
+            Console.WriteLine("How the notion of collaboration and responsabilities we begin to put things into containers and categories and things start to get sorted out for us as we begin to understand the design of the system");
+
+
+            PressEnterForMainMenu();
+        }
+
+        public static void DesigningObjectAndInteractions()
+        {
+
+            Console.Clear();
+
+
+            Console.WriteLine("How do we design individual objects in our conceptual machinery? How do we know whne our objects are well defined at all");
+            Console.WriteLine("How do we know that the object is not overreaching its boudaries of its domain or apllication specific responsibilities ?");
+            Console.WriteLine();
+            Console.WriteLine("There is not single answer to this question");
+            Console.WriteLine("A well defined object supports a clearly defined role. And that design is an iterative and inceremental process of envisioning objects and their responsibilities and inventing flexible collaborations");
+            Console.WriteLine("Fortunaly, we do have some patterns and principles that help us discover elegant ways of handling common problems");
+            Console.WriteLine("I mean common interactions or collaborations between objects and they have been left to us by practitioners over the course of the last several decades");
+            Console.WriteLine("We get to decide as developers, we get to apply that advice. WE get to apply those patterns and those principles situationally to our own problem domain");
+            Console.WriteLine("This is not a one-time process,but it is an ongoing process ");
+            Console.WriteLine("We should never take the attitude that our decisions are final");
+            Console.WriteLine("Everything should always be opet for re-evaluation");
+            Console.WriteLine("We have to be willing to and able to refactor our code when a requirent demands that we consider the new practice or pattern");
+            Console.WriteLine();
+            Console.WriteLine("What are these principles and patterns that we should at least consult before we go off and make a decision specific based on our problem domain");
+            Console.WriteLine();
+            Console.WriteLine("The sources for the priciples is the kind of the mother of them all is from the gang of four  ");
+            Console.WriteLine("It a book entitled \"Design Patterns\" - four authors that have been instrumental in helping to document design patterns ");
+            Console.WriteLine("Now the challenge with this book is that it is very difficult to read ");
+            Console.WriteLine("And it is typically written out in eighter Java or C++, some of the terminology they used are over my head");
+            Console.WriteLine();
+            Console.WriteLine("The next book  \"Appying uml and patterns\" by Craig Lman  ");
+            Console.WriteLine("3 rd book to read is  from Uncle Bob Martin - \" Agile, Principles,Patterns and Practices in C#\" ");
+            Console.WriteLine();
+            Console.WriteLine("4 th book that Bob recommend is \"Head First Design patterns\" by O 'Relly");
+            Console.WriteLine("Book \"Design pattern\" is more technical and difficult to read, but the rest of them ,especially Uncle Bob is for C# written is more suitable for .NET");
+            Console.WriteLine();
+            Console.WriteLine("You can really spend a lifetime mastering all of this. And  any road that you decide to kind of go off on a tangent , it will pretty much lead out info infinity");
+            Console.WriteLine();
+            Console.WriteLine("But it all comes back to some basic tenants . And if you can get those right, ytou can probably build your application in such a way tyhat it can withstand the inevitable impact of change on the software system");
+            Console.WriteLine("If we can just get that under our belt, then we will be doing fine . You can make a career out of all of this. ");
+            Console.WriteLine("Many people have , it is unfortunately both appeling and dauting at the same time because there is just to much to learn and so little time to learn it");
+
+
+            PressEnterForMainMenu();
+        }
+
+        private static void FourPillarsOfOOP()
+        {
+            Console.Clear();
+
+            Console.WriteLine(" ==== FOUR PILLARS OF OOP ==== ");
+            Console.WriteLine();
+            Console.WriteLine("1. Abstaction");
+            Console.WriteLine("2. Encapsulation");
+            Console.WriteLine("3. Inheritance - implementation ||  interface ");
+            Console.WriteLine("3A Implementation inheritance");
+            Console.WriteLine("3B Interface inheritance");
+            Console.WriteLine("4. Polymorphism");
+            Console.WriteLine();
+            Console.WriteLine("9. Povratak na glavni meni");
+            Console.WriteLine("99. Napusti program");
+            Console.WriteLine();
+            Console.WriteLine("Odaberite opciju od 1 do 4 ili 99 za napustanje programa");
+           
+
+
+        }
+
+        public static void ChooseToDisplayFourPillarsMenu()
+        {
+            bool showMenu = true;
+
+            while (showMenu )
+            {
+                FourPillarsOfOOP();
+
+                string userInput = Console.ReadLine();
+
+                string filteredUserInput = userInput.Trim().ToLower();
+
+                showMenu = SwitchFourPillarsOfOOP(filteredUserInput);
+            }
+        }
+
+        private static bool SwitchFourPillarsOfOOP(string input)
+        {
+            switch(input)
+            {
+                case "1":
+                    Console.Clear();
+                    Console.WriteLine("Abstaction");
+                    Console.ReadLine();
+                    return true;
+
+                case "2":
+                    Encapsulation();                   
+                    return true;
+
+                case "3":
+                    Console.Clear();
+                    Console.WriteLine("Odaberite 3A ili 3B");
+                    Console.ReadLine();
+                    return true;
+
+                case "3a":
+                    ImplementationInheritance();
+                    return true;
+
+                case "3b":
+                    InterfaceInheritance();
+                    return true;
+
+                case "4":
+                    Polymorphism();
+                    return true;
+
+                case "99":
+                    ExitProgram();
+                    return false;
+
+                case "9":
+                    ChooseToDisplayMainMenu();
+                    return false;
+
+                default:
+                    Console.WriteLine("Greska");
+                    Console.ReadLine();
+                    return true;
+
+
+            }
+        }
+
+        public static void Encapsulation()
+        {
+            Console.Clear();
+
+
+            Console.WriteLine("Object oriented programming is all about boundaries and relationships and communication across those bondaries");
+            Console.WriteLine("Through the relationships that objects have with one another");
+            Console.WriteLine();
+            Console.WriteLine("The major tenets of object-oriented programming");
+            Console.WriteLine("The word tenet is not a word that we use frequently. It is defined as a principle or a belief, especially one of the main pricniples of a given religion or philosophy");
+            Console.WriteLine("We use the term tenant to express some of the highest guiding principles and concepts in object-oriented programming from which all the other things flow that we will learn about");
+            Console.WriteLine();
+            Console.WriteLine("There are four tenets of object-oriented programming.");
+            Console.WriteLine("1. \"Encapsulation\"");
+            Console.WriteLine("2. \"Inheritance \" ");
+            Console.WriteLine("3. \"Polymorphism \" ");
+            Console.WriteLine("4. \"Abstraction \"");
+            Console.WriteLine();
+            Console.WriteLine("Encapsulation ");
+            Console.WriteLine("Encapsulation is a mechanism that is used to hide the implemetation details of a class");
+            Console.WriteLine("This will take several different forms");
+            Console.WriteLine("Class is made up of information, typically fields of information , and then it is made of functions which we call  object oriented methods ");
+            Console.WriteLine("Those methods operate on the information the fields, or use that information in some way to perform a task that we have delegated to it");
+            Console.WriteLine("It has a responsability.We have delegated that responsability ");
+            Console.WriteLine("We encapsulate the information to be hidden from other classes first of all, and we restict access to that information");
+            Console.WriteLine("We restict access to fields, throught use of properties");
+            Console.WriteLine();
+            Console.WriteLine("Property consist of two parts.It has getter and setter.They are really two methods, although they dont look like methonds in full definition of a property  ");
+            Console.WriteLine("We can use these property getters and setter methods as gatekeepers. They protect the data the underlying fields of information to ensure that data is set to a proper value within a certain range of accepted values");
+            Console.WriteLine("Perhaps from a getting standpoint it is only available to people with certain permissions in the system ");
+            Console.WriteLine("Like shown down in class Car");
+            Console.WriteLine();
+            Console.WriteLine("We might also encapsulate all of the functionality of a method behind a couple of public methods");
+            Console.WriteLine("So we might break up a task that we delegate to a method into several helper methods ");
+            Console.WriteLine("We might do it for a number of different reasons, not the least of which is for readability or for just to keep things scoped in a more manageable sort of way");
+            Console.WriteLine("We can choose to hide a the private implementation details using the word private and expose one method that will make calls into those private methods, and expose that use the keyword public");
+            Console.WriteLine();
+            Console.WriteLine("The concept of encapsulation");
+            Console.WriteLine("Analogy with a nosy friend, somebody who wants to know a little bit too much about your private life and maybe even wants to insert themselves into your private world");
+            Console.WriteLine("We want our objects to have healthy relationships whenver they collaborate with each other");
+            Console.WriteLine("An object that share too much information about its own implementation invites others to use the object in unintended ways ");
+            Console.WriteLine("Let just say that our private method its tied to uor objects private implementation of its responsabilities");
+            Console.WriteLine("If  i were able to call into one of the private methods here, I could never replace car or it would be difficult for me to replace this class with another class because this code knows way too much bout how this class does its job");
+            Console.WriteLine("If you try to replace this object with a new version , the entire application becomes broken. Why? Because the object that this interacts with knows way too much about the object that is is interacting with");
+            Console.WriteLine("It is abusing the proper contract of a work agreement");
+            Console.WriteLine("So your object should share as little as possible in order to do its work");
+            Console.WriteLine("This makes for a cleaner collaborative relationship between your object and other objects");
+            Console.WriteLine("It means your object can more be more easily replaced with a different object that has the same basic interfaces in terms of the method signatures and such but with a different implementation");
+            Console.WriteLine();
+            Console.WriteLine("Encapsulation is the first tenant of object-oriented programming. ");
+            Console.WriteLine("It contributes to helping us build more maintainable code because it enforces boundaries in a collaborative relationship");
+               
+
+            PressEnterForMainMenu();
+        }
+
+
+        public static void ImplementationInheritance()
+        {
+            Console.Clear();
+
+            Console.WriteLine("The second tenant of object-oriented programming is inheritence ");
+            Console.WriteLine("Inheritence is where an object is based on another object borrowing its implementation for some of its responsabilities or creating new specilaed implementations for other responsabilities");
+            Console.WriteLine("And perhaps even adding new implementation for responsabilities that are unique to the inheriting object");
+            Console.WriteLine();
+            Console.WriteLine("Inheritance can also be in form of a contract or an interface");
+            Console.WriteLine("So an object can implement one or more interfaces which define properties but more likely define methods that must be implemented to satisfy the conditions of the contract");
+            Console.WriteLine();
+            Console.WriteLine("When we talk about inheritance there is actually two different kinds of inheritance ");
+            Console.WriteLine("* Implementation inheritance");
+            Console.WriteLine("* Interface inheritance");
+            Console.WriteLine();
+            Console.WriteLine("Implementation inheritance.  There is at least two classes in inheritance .There is a parent class and it is child class. ");
+            Console.WriteLine("The child deres its functionality, its properties and methods from the parent or that relationship can be described ad a superclass and subclass");
+            Console.WriteLine("Superclass which has a number of methods and properties , and you have subclass which inherits all of those ");
+            Console.WriteLine("Subclass can decide to override some , add additional features for specialization, whatever the case might be");
+            Console.WriteLine("There is also a base class and the derived class it all sininims for the same relationship ");
+
+                    
+
+
+            Console.WriteLine();
+            Console.WriteLine("1* At first glance, you might see some benefit in terms of code reuse ");
+            Console.WriteLine("2* But override and extend the parts that you nedd to create a specialized version of that object specific to the responsabilities that we as the developers will delefate to that child object in the system");
+            Console.WriteLine("3* The flexibility that it gives to collaborations. ");
+            Console.WriteLine("We can create similar but different implementations of the machinery thats needed to create and object that has some variances");
+            Console.WriteLine("Implementation inheritance makes out collaborations much more flexible because we are able to generalize our collaborations between objects allowing for specializes child version of those collaborating object to be used in line of the parent object");
+            Console.WriteLine("Larger contribution to the object-oriented programming world is for the generalization and specialization of collaborating objects and this is really half , second half is polymorphism");
+            Console.WriteLine("We will see why is it so powerfull when you combine implementation with inheritance with polymorphism");
+
+
+
+            PressEnterForMainMenu();
+        }
+
+
+        public static void InterfaceInheritance()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Interface inheritance is similar to implementation inheritance in this regard when you have multiple objects that share the same basic shape");
+            Console.WriteLine("In other words, when they support the same method signatures or properties ");
+            Console.WriteLine("Interface inheritance take this whole idea one step further");
+            Console.WriteLine();
+            Console.WriteLine("Interfaces only define the public members of a class that must be implemented by a class in order to satisfy a contract between two or more object");
+            Console.WriteLine("So it is a contract of communication. There is no implementation to fall back on when you create an interface");
+            Console.WriteLine("");
+            Console.WriteLine("But in superclass - subclass there is  implementation inheritance that  you can always rely on the parents implementation ");
+            Console.WriteLine();
+            Console.WriteLine("Interface inheritance has a whole different purpose and while it is similar its purpose is different");
+            Console.WriteLine("You use intefraces to define an abstraction that breaks a depencency ");
+            Console.WriteLine("Interface represents a contract for services that I need rendered or speaking as an object, I need something done.");
+            Console.WriteLine("So I will put a contract out there and saay if anybody can work with me, here is the contract that you will have to fill on your side ");
+            Console.WriteLine("You have to satisfy on your side. The other object can accept the terms of the contract, and implement the terms of the contract ");
+            Console.WriteLine();
+
+                    
+
+            Console.WriteLine();
+            Console.WriteLine("What happens when I want to add another type of object? ");
+            Console.WriteLine("I would have to come in adn create a new helper method for each one of these");
+            Console.WriteLine("This seems like not the right place to do that because the code passage could get longer and longer over time");
+            Console.WriteLine();
+            Console.WriteLine("First of all I don't even have the information necessary yo go off and know what needs to be printed and how it needs to be printed");
+            Console.WriteLine("I rather have the information holder who the object that knows the information be the one responsible for formatting and then printing out to screen the value inside of its own instance");
+            Console.WriteLine("I need to create like one method  \"static void DisplayYourself\" then you need to implement IDisplayable  ");
+            Console.WriteLine("We create interface with \" public interface IDisplayable \" ");
+            Console.WriteLine("In the body of interface we will just put method without implmentation  void Display(); ");
+            Console.WriteLine("Now in the class we must implement interface with IdIsplayable , and with it it must be implemented all the methods from interface");
+            Console.WriteLine("But after that ww will call only one Method ()  \" DispayYourself(car)   DisplayYourself(book)  - which will shown these methods");
+            Console.WriteLine("Now the \" DisplayBook and DisplayCar \" are no longer needed , we are using their method implemetation on Car and Book class with method \" Display\" ");
+            Console.WriteLine("The result wont be any different , but the way we got there is dramatically different");
+            Console.WriteLine();
+            Console.WriteLine("And now at this point on the program class doesn;t need too much information about how to display objects that it holds a reference to");
+            Console.WriteLine("It is going to depend on the fact that they implement this contract and that they know hoe to display themselves as a result");
+            Console.WriteLine();
+            Console.WriteLine("Any object that implements a contract can be used. Since any object that implements a contract can be used that means two things");
+            Console.WriteLine("First we removed a tight coupling that our object may have to other objects");
+            Console.WriteLine("We really see that more here in Displayyourself . There is not a tight coupling .Like it was in methind that belonged to Car or Book. ");
+            Console.WriteLine("It is just very generic and we can pass anything into it ");
+            Console.WriteLine("Since our object is not coupled and it only depends on a specific coupled in such a way that it depends on a specific object type ,");
+            Console.WriteLine("but now any object that implements our Idisplayable contract we can isolate our object more easily ");
+            Console.WriteLine("Now if we wantend  to unit test main for example, we could isolate it and then perform utit test  ");
+            Console.WriteLine();
+            Console.WriteLine("Similar to encapsulation, it keeps our collaboration simple and flexible because we have established clear boundaries ");
+            Console.WriteLine("We dont want one object so tightly coupled to another object ");
+            Console.WriteLine("Interface inheritance helps us to separate our concerns in clear lines");
+
+
+
+            PressEnterForMainMenu();
+        }
+
+        public static void Polymorphism()
+        {
+            Console.Clear();
+
+            Console.WriteLine("The third tenant of object - oriented programming is polymorphism");
+            Console.WriteLine("It comes from Greek, it literally means  - many forms or many shapes ");
+            Console.WriteLine("Polymorphism allows you to call the same method on different objects as long as it truly the same method");
+            Console.WriteLine("The same method signature, same input parameters, same return values or types, same name , so on");
+            Console.WriteLine();
+            Console.WriteLine("Id three different object all have a different version of the same method, then our caller really doesn not care which object that it is working with");
+            Console.WriteLine("All it needs to know is that they all are supporting the same method. It just needs to be able to get a reference to one of those objects and then trust that the calling the method will perform the correct ");
+            Console.WriteLine("responsability in the system relative to the purpose of that particular object");
+            Console.WriteLine();
+            Console.WriteLine("We get printed information about the car and information about the suv ");
+            Console.WriteLine("With car with the info from make, model and year");
+            Console.WriteLine("For suv we get , make, model, year and driving mechanism   - like it is suposed to get");
+            Console.WriteLine();
+            Console.WriteLine("In order to withness polymorphic behaviour , we are goig to take a look at this print method");
+            Console.WriteLine("Print helper method will take anything of type autombile and present it");
+            Console.WriteLine("That will include automobile and suv class ");
+            Console.WriteLine("For automobile, we will get the same display we had previous, but for suv we will get the display from car which does not contain the drive method");
+            Console.WriteLine("We are getting cars version for display method");
+            Console.WriteLine();
+            Console.WriteLine("In order to enable polymorphism in our code, we neeed to make two modifications to our code");
+            Console.WriteLine("But if we in display method in car put \"virtual\"  then in display method in suv instead \"new\" we put \"override\" ");
+            Console.WriteLine("This method can be completely overridden, notjust hidden but it can be even exteneded by derived class");
+            Console.WriteLine("We are adding \"virtual\" keyword ");
+            Console.WriteLine("Now i derived class we are replacing word \" new \" with word \"override\"");
+            Console.WriteLine();
+            Console.WriteLine("Then we will get the same result on the starting point ");
+            Console.WriteLine("We see the polymorphic behaviour and it behaves correctly");
+            Console.WriteLine();
+            Console.WriteLine("It is the ability for you to use or to call a given method across multiple different types and for it to actually make a call in and use that particual version of that method");
+            Console.WriteLine();
+            Console.WriteLine("Polymorphism is our manifestation of our desire to build more flexible collaborations between objects");
+            Console.WriteLine("Inflexible collaborations are limiting");
+            Console.WriteLine("We are really not relying on a concrete direct reference to a specific object");
+            Console.WriteLine("Here in our print method, we are just saying anything that comes down line from automobile. It can be automobile, suv, or engine");
+            Console.WriteLine("We are not relying on specific object per se in order to call that method on than objec");
+            Console.WriteLine("As long as the object that we pass in her has a method defined with that specific name then it has that specific input and it returns that particular return type");
+            Console.WriteLine();
+            Console.WriteLine("With polymorphysm - We decoupled the collaboration");
+
+            PressEnterForMainMenu();
+
+        }
+
+
+        public static void UnderstandingRelationshipCouplingAndDependancy()
+        {
+            Console.Clear();
+
+            Console.WriteLine("People who are codependent");
+            Console.WriteLine("Wikipedia says excessive reliance on othe people for approval and a sense of identity leads to all sorts of issues for humans");
+            Console.WriteLine("They become enablers for each other with regards  to substance abuse like alcoholism, drugs, gambling, addictions");
+            Console.WriteLine("Less over like immaturity or irresponsibility or even underachievement");
+            Console.WriteLine();
+            Console.WriteLine("But objects can form unhealty relationships with each other as well");
+            Console.WriteLine("Some dependency is completely necessary ");
+            Console.WriteLine("No object is an island unto itself");
+            Console.WriteLine("Object should and must collaborate together");
+            Console.WriteLine("But when a relationship becomes unhealthy is when we begin to notice certain telltale signs of unbreakable codependence, which in programming circle is known as coupling");
+            Console.WriteLine("So we should strive to design objects that have low coupling");
+            Console.WriteLine();
+            Console.WriteLine("The most obvious sign of an unhlethy relationship is when we notice that one concrete object is directly creating and instance of another concrete object in order to collaborate with each other");
+            Console.WriteLine("Now that could be a helathy relationship if two objects are living in the same neighborhood like we discussed several lessons ago");
+            Console.WriteLine("Remember with boundaries. So from a domain responsability and application responsability perspective, if you have two objects in the same domain responsability and in the same architectual layer , then you are probabbly ok");
+            Console.WriteLine();
+            Console.WriteLine("But if two objects are engaged in interboudary relationships and one creating a concrete instance of the other one using the new keyword, then you might have a problem , and you probably want to break that dependency");
+            Console.WriteLine();
+            Console.WriteLine("First is when a domain specific object has a direct dependency on a application specific object");
+            Console.WriteLine("Then we violated the separation of concerns principle");
+            Console.WriteLine("In this particular case violating ther saparation of concerns principle mean is problematic because our domain layer is now permanently bolted onto a implementation of our persistence layer");
+            Console.WriteLine("Because we used the new keyword to create directly create a concrete object from one layer in another layer ");
+            Console.WriteLine("This will limit us in several different ways ");
+            Console.WriteLine("It is going to limit us our ability to swap out implementations of our persistent objects, which in turn limits our ability to unit test our domain object and grow confident in its ability to implement the fine print");
+            Console.WriteLine("We will solve it through inversion of control and dependency injection");
+            Console.WriteLine();
+            Console.WriteLine("We have a car, which I would classify as a domain object.");
+            Console.WriteLine("But we see it does have a method where it is creating a new incance of this other class called CarPersitence to file ");
+            Console.WriteLine("And this is what I would call an application specific object");
+            Console.WriteLine("This object would probably live in another project in our solution");
+            Console.WriteLine("It would be typically be a class library that we would assign  the responsability of being a persistence layer");
+            Console.WriteLine();
+            Console.WriteLine("From an architectual standpoint you typically wouldn't have these in the same file");
+            Console.WriteLine("But you have two fundamentally different concerns. One is domain, one is application specific");
+            Console.WriteLine("In our example we created a new instance of this, and a created an interbouindary relationship by gluing together our domain class with our application specific class");
+            Console.WriteLine();
+            Console.WriteLine("The problem with this , is that if we ever want to replace the way that this class is persisted. This will kind of hard to do because we have glued our domain class directly yo our persistence");
+            Console.WriteLine("They are across boundaries , and yet now they have a weird codepenndancy where one has to be there for the other one to work");
+            Console.WriteLine("That the case where we have a domain specific object that tightly coupled to an application specific object that is in another architectual layer");
+            Console.WriteLine();
+            Console.WriteLine("Two domain specific objects that just happen to be in two different domain responsabilities");
+            Console.WriteLine("Domain specific object in accounting and a domain specific object in tax and the accounting object creates an instance of tax in that case");
+            Console.WriteLine("You can do that, but it is still undesirable . That kind of coupling will shorten the lifespan of the application ");
+            Console.WriteLine("Futher more we are not able to isolate that domain object for unit test");
+            Console.WriteLine("Sometimes it is difficult to set up integrated tests between inner boundary layers");
+            Console.WriteLine("That is why is so important to make sure that there is not these strong coupled objects ");
+            Console.WriteLine("One reason is for swithin the implementation, and the second reason is for unit testing");
+            Console.WriteLine();
+            Console.WriteLine("We can see that hight coupling across domain or application specific object boundaries is problematic because it makes our application brittle and untrustworthly and furthermore we are not able to swap out implementations");
+            Console.WriteLine("So coupling across domain responsabilities can be problematic");
+            Console.WriteLine();
+            Console.WriteLine("Solid - S  , single responsibility principle it states the our object should have only one reason to change");
+
+
+
+            PressEnterForMainMenu();
+        }
+
+        public static void InversionOfControlInterface()
+        {
+            Console.Clear();
+
+            Console.WriteLine("How to break up an unhealthy relationship between two of our objects ");
+            Console.WriteLine("We invert the control of dependencies instead of as we  have here. Instead The domain object depending on our persistence object ,we are going to flip the dependency so that the persisten object depends on the domain object instead");
+            Console.WriteLine("When the domain object knows that it needs services from the persistence layer architectually, it must rely on an outsider to coordinate that interaction and inject that dependency into it");
+            Console.WriteLine("Whenever we want to unit test that domain object it is coupled too strongly to the persistence layer object");
+            Console.WriteLine("It can't be isolated and we can't examine it to make sure that it by itself will fullfill tha as i have been using the terms the details  of the contract");
+            Console.WriteLine("So we have to rewrite the domain object and help it rehabiliate it so that it will say I know I need some help ");
+            Console.WriteLine("I am not going to be tied down to just one object because that not healthy for me. Instead I am going to publish contract and an interface ");
+            Console.WriteLine();
+            Console.WriteLine("First thing is we are going to define an interface. And this is from the perspective of the consumer of the service");
+            Console.WriteLine("Car is going to consume the services of a persistence object. So it needs to be the one defining what the contract terms are ");
+            Console.WriteLine("Right there between car and car persistence , we will put interface ");
+            Console.WriteLine("The next step is then for any class that wants to be persistence for the car it need to implement this interface");
+            Console.WriteLine("We are allowing to CarPersistence class to inherit interface");
+            Console.WriteLine("Now in the car class we are going to remove a direct dependency ");
+            Console.WriteLine("In class car we are going to construct dependency injection ");
+            Console.WriteLine("In class car we are defining \"  private IICarPersistence _carPersistence; \" we created a private field ");
+            Console.WriteLine("This will hold on to a reference of what object we are going to use to do the persistence");
+            Console.WriteLine("Here in constructor , i am going to demand that you give me that object ");
+            Console.WriteLine("We are going to pass it in as an argument to the constructor and then we will hold to an reference to it ");
+            Console.WriteLine("In Car constructor we are passing CarPersistece  and inside we are asising carPersistence to _carPersistence");
+            Console.WriteLine("Now we can change to var file = _carPerisitance  or even beter to only _carPersisitence.SaveCar()");
+            Console.WriteLine("We are changint to readonly  .. now  \" private readonly IcarPersistence _carPersisnce field \"");
+            Console.WriteLine("So now nothing else beside a constructor can modift our private instance of our dependency");
+            Console.WriteLine();
+            Console.WriteLine("SUMMARY ");
+            Console.WriteLine("W broke the dependency, the direct dependency between two different layers of our architecture");
+            Console.WriteLine("The car should never  have had direct codependant relationship with our car persistance to file class");
+            Console.WriteLine("So to break the dependecy we introduced an inteface and we has car persistence to file implement tha interafce ");
+            Console.WriteLine("THen we in our constructor we passed we asked for instance or our dependencies ");
+            Console.WriteLine("We inverted the control instead of car controlling car persistence to file , it is now receiving its dependency ");
+            Console.WriteLine("So we have inverted the flow of control in our application so that we can still call our save car method , but the mechanism is completely different now");
+
+            Console.WriteLine();
+            Console.WriteLine("There are more ways to dependency injection ");
+            Console.WriteLine("First is constructor dependency injection");
+            Console.WriteLine("Property dependency injection");
+            Console.WriteLine("IOC container , inversion of control containter ");
+
+
+
+
+            PressEnterForMainMenu();
+
+        }
         private static void MainMenu()
         {
             Console.Clear();
@@ -543,6 +1191,15 @@
             Console.WriteLine("8. Establishing Roles and delegating resposabilities to objects");
             Console.WriteLine("9. Contact,Interfaces and Collaborations");
             Console.WriteLine("10. Collaborations and object role stereotypes");
+            Console.WriteLine("11. Conditions of use and after effect guarantee");
+            Console.WriteLine("12. Domain vs Application Specific object");
+            Console.WriteLine("13. Components as Neighvorhoods of Objects");
+            Console.WriteLine("14. Architectual layers of responsability using Objects");
+            Console.WriteLine("15. Designing Objects and Interactions");
+            Console.WriteLine("16. 4 Pillars of OOP - Abstaction , Encapsulation, Inheritance, Polymorhism");
+            Console.WriteLine("17. Understanding relationship coupling and dependency");
+            Console.WriteLine("18. Understanding relationship inversion of control , interface");
+            Console.WriteLine();
             Console.WriteLine("99. Napustanje programa");
             Console.WriteLine();
             Console.WriteLine("Odaberite opciju od 1 do 10 ili 99 za napustanje programa");
@@ -607,6 +1264,38 @@
 
                 case "10":
                     CollaborationsAndObjectRoleStereotypes();
+                    return true;
+
+                case "11":
+                    ConditionsOfUseAndAfterEffectGuarantee();
+                    return true;
+
+                case "12":
+                    DomainVSApplicationSpecificObjects();
+                    return true;
+
+                case "13":
+                    ComponentsAsNeighborhoodsOfOBjects();
+                    return true;
+
+                case "14":
+                    ArchitectualLayersOfResposnabilityUsingObjects();
+                    return true;
+
+                case "15":
+                    DesigningObjectAndInteractions();
+                    return true;
+
+                case "16":
+                    ChooseToDisplayFourPillarsMenu();
+                    return true;
+
+                case "17":
+                    UnderstandingRelationshipCouplingAndDependancy();
+                    return true;
+
+                case "18":
+                    InversionOfControlInterface();
                     return true;
 
                 case "99":

@@ -103,6 +103,34 @@
 
     }
 
+    interface IAlat
+        {
+        void GiveMeTool();
+        }
+
+    class Hammer : IAlat
+    {
+        public void GiveMeTool()
+        {
+            Console.WriteLine("Inteface Ialat is called");
+        }
+    }
+
+    class Tool
+    {
+        private readonly IAlat _alat;
+        public Tool (IAlat ialat)
+        {
+            _alat = ialat;
+        }
+        public void StartWorking()
+        {
+            _alat.GiveMeTool();
+        }
+        
+    }
+
+
     class CarPersistenceToFile :IICarPersistence
     {
         public void SaveCar(Car car)

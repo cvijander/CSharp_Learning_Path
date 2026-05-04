@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
             Console.WriteLine("How do we design individual objects in our conceptual machinery? How do we know whne our objects are well defined at all");
             Console.WriteLine("How do we know that the object is not overreaching its boudaries of its domain or apllication specific responsibilities ?");
             Console.WriteLine();
