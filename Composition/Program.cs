@@ -23,18 +23,24 @@
             Console.WriteLine("We have to change the access modifier from public to protected in room class");
             Console.WriteLine("Composition is an interesting way to delegate responsabilities to your application");
             Console.WriteLine();
-            Console.WriteLine("Well known idiom  which says favor \"composition over ihneritance\"");
+            Console.WriteLine("Well known idiom  which says \" favor composition over ihneritance\"");
             Console.WriteLine("It is an advice because word favor is used , which means you shoudl prefer");
             Console.WriteLine("Wikipedia page - Composition over inheritance");
             Console.WriteLine("We are calling implementation inheritance , not interface inheritance");
             Console.WriteLine("It says to favor composition over inheritance, is a design principle that gives the design higher flexibility");
             Console.WriteLine("It is more natural to build bussiness domain classes out of various components which means classes than trying to find commonality between them nad creating a family tree");
-            Console.WriteLine("Gas pedal and a wheel are both vital components of a car. ");
+            Console.WriteLine("Gas pedal and a wheel share very few common traits, yet they are both vital components of a car. ");
             Console.WriteLine("Composition also provides a more stable bussiness domain in the long term as it is less prone to the quirks of the family members");
             Console.WriteLine("It is better to compose what an object can do with  \" a has a \" relationship than extend what it is with an \"is a \" relationship that you get with inheritance");
             Console.WriteLine("Interface inheritance that the initial design is simplified by identifing system object baheviours in separate interfaces instead of creating a hierarhical relationship to distribute behaviours among bussiness domain classes via inheritance");
             Console.WriteLine("This approach more easily accommodates future requiremnt changes that would otherwise require complete restructuring of the bussiness domain classes in the inheritance model");
             Console.WriteLine("Additionaly it avoids problems often associated with relatively minor changes to an inheritance based model that includes several generations of classes");
+            Console.WriteLine("When it comes to inheritance , you should use it sparingly");
+            Console.WriteLine("In domain context, less inheritence you use it, it is better ");
+            Console.WriteLine("In application specific object than it might make sense to employ more inheritance");
+            Console.WriteLine("You should prefer the simplicity of composition over inheritance"); 
+
+
 
 
 

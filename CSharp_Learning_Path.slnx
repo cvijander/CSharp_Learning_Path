@@ -137,6 +137,9 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_23_Understanding_Ralatioships_Compositions/">
     <Project Path="Composition/Composition.csproj" Id="52caf699-a21a-4001-a80f-35b6528e1a09" />
   </Folder>
+  <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_24_Understanding the agile analysis and design process using teams/">
+    <Project Path="understang the agile using visual studo team/understang the agile using visual studo team.csproj" Id="e02b1d79-a368-41b1-835e-28d3bda0c722" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_2_Establishing Crucial Metaphors/">
     <Project Path="Lession_2/Lession_2.csproj" Id="e20dfaa6-db4d-4efc-bf33-f616d78602dc" />
   </Folder>
