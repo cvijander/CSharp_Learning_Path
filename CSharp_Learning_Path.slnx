@@ -167,4 +167,8 @@
   <Folder Name="/BobTabor/Thinking like an object oriented programer/Lession_9_Contract,Interfaces and Collaborations/">
     <Project Path="ConstactInterfacesCollaborations/ConstactInterfacesCollaborations.csproj" Id="4da185bc-5f1a-47e1-bd10-acaf08832a2a" />
   </Folder>
+  <Folder Name="/TimCorey/" />
+  <Folder Name="/TimCorey/Creating Excel Files in C#/">
+    <Project Path="ExcelDemo/ExcelDemo.csproj" Id="e222bc36-f3e9-4e97-93d2-65c4f8dd46a4" />
+  </Folder>
 </Solution>
