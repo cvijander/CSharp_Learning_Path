@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
             Console.WriteLine("Objects sometimes merely collaborate");
             Console.WriteLine("One object need help, it requests help from another object. After they collaborate, the task at hand, they move on with their lives");
             Console.WriteLine("Sometimes , objects share a tighter bond.Like we had in previous lessions ");

@@ -6,9 +6,37 @@ namespace ThinkingLikeAnOOPConsole
     {
         static void Main(string[] args)
         {
-                              
-           
-            ChooseToDisplayMainMenu();           
+
+
+             ChooseToDisplayMainMenu();
+
+
+            string lessionText = @"1. Classes, Objects, Properties, Methods
+2. Private, Public, Static, Instance 
+3. Inheritance, Abstract, Intefface 
+4. Object BASED Programming 
+Object oriented programming transcend code in so much that it transcends any give programming language per se 
+OO is a mindset 
+A philosophy which drives a way of thinking 
+A world view about problems and solutions 
+A path with a North star 
+Guidance and principles on how to achieve overarching objectives 
+Object-oriented programming provides a process on how to discover and implement a conceptual machine to realize that desired output.
+How to decompose a problem in the real world and then build some sort of abstraction in this etherial world in our minds.
+Abstraction of that real world problem, and than we will build that abstraction using principles,patterns , that will actually sum up important tenants of object-oriented programming.
+Then the end result is that we have designed conceptually designed machine that takes raw materials like data input from the user, and converts those into thinks like data that has been processed,mesaging, activities and so on
+Those will have meaning in the living world, even if that is a conceptual world like the account world
+Software dev religion
+In other worlds , ita age old wisdom - not a rulebook - that gives you guidance that you must apply situactionally for your specific problem domain.
+Require devotion
+People devote their entire careers practicing and learning more about Object Orientation and how to apply it in a give situation
+
+
+";
+                        Lession IntroMainPage = new Lession(1, "Intro in  OOP", lessionText);
+
+                        IntroMainPage.DisplayLession();
+            
 
         }
 
@@ -16,42 +44,42 @@ namespace ThinkingLikeAnOOPConsole
         {
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine("1. Classes, Objects, Properties, Methods");
-            Console.WriteLine("2. Private, Public, Static, Instance ");
-            Console.WriteLine("3. Inheritance, Abstract, Intefface");
-            Console.WriteLine("4. Object BASED Programming");
+           // Console.WriteLine("1. Classes, Objects, Properties, Methods");
+           // Console.WriteLine("2. Private, Public, Static, Instance ");
+           // Console.WriteLine("3. Inheritance, Abstract, Intefface");
+          //  Console.WriteLine("4. Object BASED Programming");
             Console.WriteLine();
 
 
 
             Console.WriteLine();
-            Console.WriteLine("Object oriented programming transcend code in so much that it transcends any give programming language per se");
+           //Console.WriteLine("Object oriented programming transcend code in so much that it transcends any give programming language per se");
             Console.WriteLine();
 
-            Console.WriteLine("OO is a mindset");
-            Console.WriteLine("A philosophy which drives a way of thinking");
-            Console.WriteLine("A world view about problems and solutions");
-            Console.WriteLine("A path with a North star");
-            Console.WriteLine("Guidance and principles on how to achieve overarching objectives");
-            Console.WriteLine();
-
-
-            Console.WriteLine();
-            Console.WriteLine("Object-oriented programming provides a process on how to discover and implement a conceptual machine to realize that desired output.");
-            Console.WriteLine("How to decompose a problem in the real world and then build some sort of abstraction in this etherial world in our minds. ");
-            Console.WriteLine("Abstraction of that real world problem, and than we will build that abstraction using principles,patterns , that will actually sum up important tenants of object-oriented programming. ");
-            Console.WriteLine("Then the end result is that we have designed conceptually designed machine that takes raw materials like data input from the user, and converts those into thinks like data that has been processed,mesaging, activities and so on");
-            Console.WriteLine("Those will have meaning in the living world, even if that is a conceptual world like the account world");
+          //  Console.WriteLine("OO is a mindset");
+          //  Console.WriteLine("A philosophy which drives a way of thinking");
+          //  Console.WriteLine("A world view about problems and solutions");
+          //  Console.WriteLine("A path with a North star");
+          //  Console.WriteLine("Guidance and principles on how to achieve overarching objectives");
             Console.WriteLine();
 
 
             Console.WriteLine();
-            Console.WriteLine("Software dev religion");
-            Console.WriteLine("In other worlds , ita age old wisdom - not a rulebook - that gives you guidance that you must apply situactionally for your specific problem domain.");
+           // Console.WriteLine("Object-oriented programming provides a process on how to discover and implement a conceptual machine to realize that desired output.");
+           // Console.WriteLine("How to decompose a problem in the real world and then build some sort of abstraction in this etherial world in our minds. ");
+           // Console.WriteLine("Abstraction of that real world problem, and than we will build that abstraction using principles,patterns , that will actually sum up important tenants of object-oriented programming. ");
+           // Console.WriteLine("Then the end result is that we have designed conceptually designed machine that takes raw materials like data input from the user, and converts those into thinks like data that has been processed,mesaging, activities and so on");
+           // Console.WriteLine("Those will have meaning in the living world, even if that is a conceptual world like the account world");
+            Console.WriteLine();
+
 
             Console.WriteLine();
-            Console.WriteLine("Require devotion");
-            Console.WriteLine("People devote their entire careers practicing and learning more about Object Orientation and how to apply it in a give situation");
+           // Console.WriteLine("Software dev religion");
+          //  Console.WriteLine("In other worlds , ita age old wisdom - not a rulebook - that gives you guidance that you must apply situactionally for your specific problem domain.");
+
+            Console.WriteLine();
+            //Console.WriteLine("Require devotion");
+           // Console.WriteLine("People devote their entire careers practicing and learning more about Object Orientation and how to apply it in a give situation");
             Console.WriteLine();
 
 
@@ -1176,6 +1204,189 @@ namespace ThinkingLikeAnOOPConsole
             PressEnterForMainMenu();
 
         }
+
+        public static void Aggregation()
+        {
+
+            Console.Clear();
+
+
+            Console.WriteLine("Objects sometimes merely collaborate");
+            Console.WriteLine("One object need help, it requests help from another object. After they collaborate, the task at hand, they move on with their lives");
+            Console.WriteLine("Sometimes , objects share a tighter bond.Like we had in previous lessions ");
+            Console.WriteLine();
+            Console.WriteLine("There are two special types of relationships that we are going to look at next ");
+            Console.WriteLine("Association - that is where you have just a normal collaboration");
+            Console.WriteLine("There is relationship between two objects, but each of them ultimately have their own life cycle");
+            Console.WriteLine("They dont own each other . There is no other futher relationship between, just one time association");
+            Console.WriteLine();
+            Console.WriteLine("Aggregation - this is sometimes known as a \"HAS A \" style relationship between objects ");
+            Console.WriteLine("It denotes ownership or whole part or a this object is a part of this larger object");
+            Console.WriteLine("You have a teacher ,and you have a departments at a give university , and some teacher can exist in muliple departments and a single department can have multiple teacher involved");
+            Console.WriteLine("In a sence there is a sense in which departments own teachers. So there is an aggregation ");
+            Console.WriteLine("One department can own or have posseed group of multiple teachers , and one teacher could conceivably have multiple departments that belongs to");
+            Console.WriteLine("If a teacher were to be eliminated it would not eliminatie the department that she belonged to");
+            Console.WriteLine("And vice versa, if you were to eliminate the department, the teacher could find another job at another department in the university");
+            Console.WriteLine("But the teacher would still exist");
+            Console.WriteLine();
+            Console.WriteLine("We are really talking about two properties of the relationship");
+            Console.WriteLine("One is life cycle, when do they live and when do they die");
+            Console.WriteLine("The other one is ownerships");
+            Console.WriteLine("In aggregation there is and ownership between one object and another object, but there is not a direct correlation of life cycle");
+            Console.WriteLine("They live and die independent of eachother");
+
+
+            PressEnterForMainMenu();
+        }
+
+        public static void Composition()
+        {
+            Console.Clear();
+
+
+            Console.WriteLine("Final relatioship related topics for this course");
+            Console.WriteLine();
+            Console.WriteLine("1.  Association , a normal healthy relationship between two objects");
+            Console.WriteLine("2.  Aggregation, which is a more permanent relationship where one object keeps references to other instances of objects");
+            Console.WriteLine("However if that object were to go away, the objects that it references dont necessarily go away");
+            Console.WriteLine("There are two properties of the relationship. There is life cycle , do these live on their own and die on their own");
+            Console.WriteLine("Second there is ownership where at some point in time one object will essentialy own references to other ones");
+            Console.WriteLine();
+            Console.WriteLine("3.  Composition , which is a stronger version of aggregation");
+            Console.WriteLine("In composition, the child simply cannot exist without its parent");
+            Console.WriteLine("House and rooms . If you destroy the house, the rooms will be also destroyed");
+            Console.WriteLine("House and room class, room class is designed inside the boundaries of a house class");
+            Console.WriteLine("We have defined a class inside a class, that is one way of denoting ownership of one object to another");
+            Console.WriteLine("Composition is both ownership and it denotes lifetime");
+            Console.WriteLine("When we destroy the house, the kitchen should be gone as well");
+            Console.WriteLine("We have to change the access modifier from public to protected in room class");
+            Console.WriteLine("Composition is an interesting way to delegate responsabilities to your application");
+            Console.WriteLine();
+            Console.WriteLine("Well known idiom  which says \" favor composition over ihneritance\"");
+            Console.WriteLine("It is an advice because word favor is used , which means you shoudl prefer");
+            Console.WriteLine("Wikipedia page - Composition over inheritance");
+            Console.WriteLine("We are calling implementation inheritance , not interface inheritance");
+            Console.WriteLine("It says to favor composition over inheritance, is a design principle that gives the design higher flexibility");
+            Console.WriteLine("It is more natural to build bussiness domain classes out of various components which means classes than trying to find commonality between them nad creating a family tree");
+            Console.WriteLine("Gas pedal and a wheel share very few common traits, yet they are both vital components of a car. ");
+            Console.WriteLine("Composition also provides a more stable bussiness domain in the long term as it is less prone to the quirks of the family members");
+            Console.WriteLine("It is better to compose what an object can do with  \" a has a \" relationship than extend what it is with an \"is a \" relationship that you get with inheritance");
+            Console.WriteLine("Interface inheritance that the initial design is simplified by identifing system object baheviours in separate interfaces instead of creating a hierarhical relationship to distribute behaviours among bussiness domain classes via inheritance");
+            Console.WriteLine("This approach more easily accommodates future requiremnt changes that would otherwise require complete restructuring of the bussiness domain classes in the inheritance model");
+            Console.WriteLine("Additionaly it avoids problems often associated with relatively minor changes to an inheritance based model that includes several generations of classes");
+            Console.WriteLine("When it comes to inheritance , you should use it sparingly");
+            Console.WriteLine("In domain context, less inheritence you use it, it is better ");
+            Console.WriteLine("In application specific object than it might make sense to employ more inheritance");
+            Console.WriteLine("You should prefer the simplicity of composition over inheritance");
+
+
+            PressEnterForMainMenu();
+
+        }
+
+        public static void UndestandingAgileAnalysisAndDesignProcessUsingTeams()
+        {
+            Console.Clear();
+
+            Console.WriteLine("The topic of design  and where it happens in the process of the application development life cycle");
+            Console.WriteLine("The topic of the process around design , to see where it fits into a agile world");
+            Console.WriteLine("We talked about the application lifecycle in regards to object orientation. We introduced the BDUF - Big design up front ");
+            Console.WriteLine("We talked how BDUF was problematic and how more agile approach to design");
+            Console.WriteLine("A more organic realtime approach that involves many different team members participating during the project");
+            Console.WriteLine("Schedule in order to continue to discover the design as it reveals itself as new requiremnt pop up");
+            Console.WriteLine("That agile methodology is a more thoughtful, low friction and sensible way of designing our object and interaction");
+            Console.WriteLine("Developers are just making it up as they are going along and they are not putting a lot of forethought into it upfront");
+            Console.WriteLine();
+            Console.WriteLine("Truly agile approach means that there is a member of the team - domain expert , you can call him  the bussiness liaison");
+            Console.WriteLine("This is somebody who sits with the development team but he represents the end users and the project sponsors and he actualy becomes part of the development team");
+            Console.WriteLine("The development team and this liason are all working together to uncover and then implement the problem domain and the solution design");
+            Console.WriteLine("Unified modeling language UML - defines formal artifacts like use cases along with lots of different types of diagrams ");
+            Console.WriteLine("Object oriented analysis allowed for requirements documents of different sorts to be created at various points in the early stages of the application life cycle");
+            Console.WriteLine("And contrasting that to the agile methodoly, agile actually defines a lightweight set of analysis and design documents but they are very lightweight");
+            Console.WriteLine("And visual studio team services provides a means of mapping a requirement to individual tasks that must be completed by the developers");
+            Console.WriteLine("Visual studio team services and the agile methodology allow you to keep all those things a little more tightly coupled together");
+            Console.WriteLine("You can go from requirement to task management to design and implementation and tie back to original requirement");
+            Console.WriteLine("Also tie it to testing and other things to kind of close all the loops and make sure that everything the customer wanted actually is being addressed");
+            Console.WriteLine();
+            Console.WriteLine("There are several different benefits to this");
+            Console.WriteLine("Giving the entire team some confidence that the software is working according to the requirements");
+            Console.WriteLine("If it does not work, entire team can pintpoint code, with unit test that did not pass the test");
+            Console.WriteLine("Did not satisfy the ultimate requirement");
+            Console.WriteLine();
+            Console.WriteLine("Visual studio team services");
+            Console.WriteLine("You can perform agile project management which include things like reports, task assignment to team members, issue tracking");
+            Console.WriteLine("There is also team collaboration features");
+            Console.WriteLine("Code repository, that is kkind of the entry way into using more of the functionalitiy a version of git that is hosted by Microsoft in the cloud");
+            Console.WriteLine("There is continuos integration and this take the form of continuos build. So every time you do a checking into git");
+            Console.WriteLine("It will automatically run all the unit test that you created against that code to make sure that it can pass those tests and actually build up and compile your software");
+            Console.WriteLine("The second half of that is continuous deployment, it will automatically deploy it out to some sort of testing server so those people who are involved in integration testing  can always using the newest version");
+            Console.WriteLine();
+            Console.WriteLine("Backlog simply means thare is a collection of items that have yet to be started or addressed in some way");
+            Console.WriteLine("This is place to define a number of features - the requirements for the new system and those are going to be added as feature that are required in the system");
+            Console.WriteLine("Or they are going to wind up in a more granular format as user stories ");
+            Console.WriteLine("The upper management will wind up gathering together features that habe been requested into what called epics");
+            Console.WriteLine("And an epic is sort of like an initiave inside of an organization");
+            Console.WriteLine("It is so big that it thansdends individual software releases. It is the highest level view of the development effort usually seen from a senior management perspective");
+            Console.WriteLine();
+            Console.WriteLine("Feature can be delivered in a single release of the software, and features are mapped to Epics");
+            Console.WriteLine("And then features have one or more stories");
+            Console.WriteLine("User story is something that can be delivered in a single sprint");
+            Console.WriteLine("It is a requirement, it is a feature that is been broken down granularly and can be accomplished in one week, two weeks, whatever the duration of the sptint it is");
+            Console.WriteLine("User stories in turn have usually tasks associated with them, and these are even more granular ");
+            Console.WriteLine("They are individual to do items assigned to individual developers");
+            Console.WriteLine("Even methods and classes are being assigned to individual developers - those are called work items as well");
+            Console.WriteLine("There are different types of work items , there is a tasks, issues and bugs and feadback and so on");
+            Console.WriteLine("Theme is generally implemented as something called a tag in Visual studio team servisec");
+            Console.WriteLine();
+            Console.WriteLine("DIAGRAM");
+            Console.WriteLine("\" DEFINE STORIES, REQUREMENTS \"   * create your backlog  * Priritise your backlog  * Estimate work  * Assign work");
+            Console.WriteLine("\" MANAGE PORTFOLIOS\"  * Add epics or features   * Group backlog items");
+            Console.WriteLine("\" MANAGE BUGS \"  * Capture bugs  * Triage bugs  * Resolve & close bugs");
+            Console.WriteLine("\"MANAGE ISSUES \" * Capture issues  *Track dependecies  * Query issues");
+            Console.WriteLine();
+            Console.WriteLine("It shows common workflow and it looks pretty linear , but many times these things are going on in parallel");
+            Console.WriteLine();
+            Console.WriteLine("User stories are created by team members at all levels");
+            Console.WriteLine("They are created as the team continues to understand more and more about the requirement for the application");
+            Console.WriteLine();
+            Console.WriteLine("User story is basically just a simple description of what i term a happy path");
+            Console.WriteLine("It is a basic coure of events required to accomplish something meaningfull in the system ");
+            Console.WriteLine("It usually takes a form AS a ___ , I want to ___ so that ___");
+            Console.WriteLine("There is an actor, an actions that takes place and the desired outcome");
+            Console.WriteLine("Acceptance criteria ,these are the things that the system has to do in order for us as the end users to say that is good, it works like we agreed to");
+            Console.WriteLine();
+            Console.WriteLine("Once a task is assigned to a developer and it can be assigned a number of different ways ");
+            Console.WriteLine("That the feature can be added to this iteration, but also we can see all the backlogs items that are added to iteration one");
+            Console.WriteLine("In other words, these are the ones that the development team are committing to for this iteration, then in canban board we can assigne people to work on it ");
+            Console.WriteLine("NEW - ACTIVE - RESOLVED - CLOSED - it is all states for this particular item, when developer is workinf on this project");
+            Console.WriteLine("Everything is always up for reconsideration based on new needs reqiurements in the system that have revealed themselves");
+
+
+
+            PressEnterForMainMenu();
+
+
+        }
+
+        public static void WhereToGoNext()
+        {
+            Console.Clear();
+
+            Console.WriteLine("The goal for this course was to help you understand \"the why\" before we started really talking in detail \"How do I \" ");
+            Console.WriteLine("Object oriented programming is all about agonizing over the details of delegating responsabilities and designing collaborations between objects in order to create a conceptual machine");
+            Console.WriteLine("One skill is to understand the objects , you must become the object sort of thing , to understand his responsabilitis , etc");
+            Console.WriteLine("Programming like an object oriented programmer ");
+            Console.WriteLine("UML, class diagrams, sequence diagrams ");
+            Console.WriteLine("Solid principles and patterns");
+            Console.WriteLine("Domain driven design");
+            Console.WriteLine("Gang of 4 - patterns");
+            Console.WriteLine("Agile methodology");
+
+            PressEnterForMainMenu();
+
+
+        }
+
         private static void MainMenu()
         {
             Console.Clear();
@@ -1199,6 +1410,10 @@ namespace ThinkingLikeAnOOPConsole
             Console.WriteLine("16. 4 Pillars of OOP - Abstaction , Encapsulation, Inheritance, Polymorhism");
             Console.WriteLine("17. Understanding relationship coupling and dependency");
             Console.WriteLine("18. Understanding relationship inversion of control , interface");
+            Console.WriteLine("19. Understanding relationship Aggregation");
+            Console.WriteLine("20. Undestading relationship Compositions");
+            Console.WriteLine("21. Understaning the agile analisysis and design process using teams ");
+            Console.WriteLine("22. Where to go from here");
             Console.WriteLine();
             Console.WriteLine("99. Napustanje programa");
             Console.WriteLine();
@@ -1227,6 +1442,7 @@ namespace ThinkingLikeAnOOPConsole
             switch (input)
             {
                 case "1":
+                   // IntroMainPage.DisplayLession();
                     MainPage();
                     return true;
 
@@ -1298,6 +1514,22 @@ namespace ThinkingLikeAnOOPConsole
                     InversionOfControlInterface();
                     return true;
 
+                case "19":
+                    Aggregation();
+                    return true;
+
+                case "20":
+                    Composition();
+                    return true;
+
+                case "21":
+                    UndestandingAgileAnalysisAndDesignProcessUsingTeams();
+                    return true;
+
+                case "22":
+                    WhereToGoNext();
+                    return true;
+
                 case "99":
                     ExitProgram();
                     return false;               
@@ -1331,6 +1563,69 @@ namespace ThinkingLikeAnOOPConsole
             Console.WriteLine("-----------------------------------------------------------------");
             Console.ResetColor();
             Console.ReadLine();
+
+            Environment.Exit(0);
+
+           
+        }
+
+        public class Lession
+        {
+            public int Id { get; set; }
+
+            private string myVar;
+
+            public string Title
+            {
+                get { return myVar; }
+                set { 
+                     if (value.Length == 0)
+                    {
+                        Console.WriteLine("Naziv ne sme biti prazan");
+                    }
+                     else
+                    {
+                        myVar = value;
+                    }
+                                   
+                }
+            }
+
+            public string Content { get; set; }
+            
+            public Lession (int id, string title, string content)
+            {
+                Id = id;
+                Title = title;
+                Content = content;
+            }
+
+
+            public void DisplayLession()
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("=======================================");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($" LESSION  {Id} :  {Title}");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("=======================================");
+                Console.ResetColor();
+                Console.WriteLine();
+
+                Console.WriteLine(Content);
+
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine();
+                Console.WriteLine("-----------------------------------------------------------------");
+                Console.WriteLine("End of Lesson.  Press Enter to return to the main menu.");
+                Console.WriteLine("-----------------------------------------------------------------");
+                Console.ResetColor();
+                Console.ReadLine();
+
+
+            }
+
         }
     }
 }
