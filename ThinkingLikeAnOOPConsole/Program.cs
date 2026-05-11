@@ -8,13 +8,15 @@ namespace ThinkingLikeAnOOPConsole
         {
 
 
-             ChooseToDisplayMainMenu();
+            // ChooseToDisplayMainMenu();
 
 
             string lessionText = @"1. Classes, Objects, Properties, Methods
 2. Private, Public, Static, Instance 
 3. Inheritance, Abstract, Intefface 
 4. Object BASED Programming 
+
+
 Object oriented programming transcend code in so much that it transcends any give programming language per se 
 OO is a mindset 
 A philosophy which drives a way of thinking 
