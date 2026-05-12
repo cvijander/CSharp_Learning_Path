@@ -91,6 +91,9 @@
   <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_2_Implementing_polymorphic_behaviour/">
     <Project Path="polymorphic_behaviour/polymorphic_behaviour.csproj" Id="80212986-15df-4200-aa0c-48ea26a73de9" />
   </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_3_Referencing members of th e base class with the base keyword/">
+    <Project Path="inheritance_Base_keyword/inheritance_Base_keyword.csproj" Id="67ee78b1-304c-4e3f-aae1-fb2834df2f13" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/" />
   <Folder Name="/BobTabor/Thinking like an object oriented programer/ConsoleApplication/">
     <Project Path="ThinkingLikeAnOOPConsole/ThinkingLikeAnOOPConsole.csproj" Id="efb26b5a-a52f-401d-9d30-4fa01cefe250" />

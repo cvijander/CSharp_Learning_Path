@@ -13,6 +13,23 @@
             Console.WriteLine("If we created a another method who is   private static void DoDrive(Automobile a)\r\n        {\r\n            a.Drive();\r\n        } ");
             Console.WriteLine("Bu when we call this method  inserting a automobile or a truck, we are getting the same result.. we are getting a drive method from a automobile");
             Console.WriteLine("We are getting an original parent method for both parties");
+            Console.WriteLine("In order to override use of child method we need to use two keywords ");
+            Console.WriteLine("On the child method , we are gona use override modifier in the method signature");
+            Console.WriteLine("This is telling C# compiler, I want you to override base implementation with this implementation");
+            Console.WriteLine("But now the method is making a red swuiqly line, meaning there is some isuses ");
+            Console.WriteLine("Now in order method to work, we must make it to be virtual, abstract or override");
+            Console.WriteLine();
+            Console.WriteLine("Override ");
+            Console.WriteLine("The override modifier is required to extend or modify the abstract or virtual implementation of an inherited member");
+            Console.WriteLine();
+            Console.WriteLine("Virtual");
+            Console.WriteLine("The virtual keyword modifies a member so it can be overriden in a derived class");
+            Console.WriteLine("Virtual means, we have an implementation, but if you want a different implmentation you can override me");
+
+
+
+
+
 
 
 
@@ -60,7 +77,7 @@
         public int Year { get; set; }
 
 
-        public void Drive()
+        public virtual void Drive()
         {
             Console.WriteLine($"The {Year} {Make}  {Model} is driving");
         }
@@ -71,7 +88,7 @@
         public int TowingCapacity { get; set; }
         public int CargoSize { get; set; }
 
-        public void Drive()
+        public override void Drive()
         {
             Console.WriteLine($"The TRUCK {Year} {Make}  {Model} is hauling");
         }
