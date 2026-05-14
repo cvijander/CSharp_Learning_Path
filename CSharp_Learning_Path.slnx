@@ -97,6 +97,15 @@
   <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_4_Challenge_1/">
     <Project Path="inheritanceChallengeOne/inheritanceChallengeOne.csproj" Id="11b1e400-6492-46cc-95a5-5bbc35c8cd81" />
   </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_7_Protected_keyword/">
+    <Project Path="protected_Keyword/protected_Keyword.csproj" Id="7cd747e4-8000-461f-8a3e-93efdb2d7448" />
+  </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_8_Overriding system objects to string method/">
+    <Project Path="overriding system object to string/overriding system object to string.csproj" Id="e78a14aa-0ec9-406f-b6b7-e6b74c23ce2e" />
+  </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_9_Performing reflection on base and redived classes/">
+    <Project Path="performing_reflection/performing_reflection.csproj" Id="c57fe419-97ae-46b1-9a20-8be5d18c777b" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/" />
   <Folder Name="/BobTabor/Thinking like an object oriented programer/ConsoleApplication/">
     <Project Path="ThinkingLikeAnOOPConsole/ThinkingLikeAnOOPConsole.csproj" Id="efb26b5a-a52f-401d-9d30-4fa01cefe250" />
