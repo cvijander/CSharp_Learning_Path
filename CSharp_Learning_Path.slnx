@@ -85,6 +85,9 @@
     <Project Path="Strings/Strings.csproj" Id="130c771b-4257-4759-8f88-1ae08f39ca53" />
   </Folder>
   <Folder Name="/BobTabor/Inheritance Fundamentals/" />
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_10_Method hidding/">
+    <Project Path="method hiding/method hiding.csproj" Id="b4b25f9e-bedc-47cd-964a-e0a2382943e4" />
+  </Folder>
   <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_1_Introduction_to_inheritance/">
     <Project Path="introduction_to_inheritance/introduction_to_inheritance.csproj" Id="7351a1ef-bfeb-4fd7-894b-580aeb6fb6f4" />
   </Folder>

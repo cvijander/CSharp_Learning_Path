@@ -5,6 +5,16 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Reflection allows us to inspect types and to see what they are just like type of and get type");
+            Console.WriteLine();
+            Console.WriteLine("IsSubClassOf()");
+            Console.WriteLine("Allows you to determine whether a class inherits from a parent (or grnadparent ) class");
+            Console.WriteLine();
+            Console.WriteLine("IsInstanceOfType()");
+            Console.WriteLine("Same idea, but allows you to work  with instances of classes (ratrher than classes)");
+            Console.WriteLine();
+            Console.WriteLine("IsAssignableFrom()");
+            Console.WriteLine("Determines whether an instance of a specified type can be assigned to an instance of the current type");
+
 
 
 
@@ -25,8 +35,25 @@
             Console.WriteLine(typeof(MasterBedroom).IsSubclassOf(typeof(Room)));
             // jeste mada je to unuk ali opet jeste 
 
+            Console.WriteLine(typeof(MasterBedroom).IsSubclassOf(typeof(Kitchen)));
+            // rezxutlat je false, jer oni pripadaju room ali nisu bas na istoj grani 
+
+            Console.WriteLine(typeof(MasterBedroom).IsInstanceOfType(mbr));
+            // vraca true 
 
 
+            Console.WriteLine();
+            Console.WriteLine(typeof(MasterBedroom).IsInstanceOfType(mbr)); // true 
+            Console.WriteLine(typeof(Bedroom).IsInstanceOfType(mbr));  // true
+            Console.WriteLine(typeof(Room).IsInstanceOfType(mbr)); // true 
+            Console.WriteLine(typeof(Kitchen).IsInstanceOfType(mbr)); // false 
+
+            Console.WriteLine();
+
+            Console.WriteLine(typeof(MasterBedroom).IsAssignableFrom(typeof(Bedroom)));
+            // false   masterBedrum test1 = new MasterBedrom
+
+            Console.WriteLine(typeof(Bedroom).IsAssignableFrom(typeof(MasterBedroom))); // ovo vraca true.. mada je malo treba bolje skapirati o cemu je pricao 
 
 
             Console.WriteLine("320 - 1316 -- pogledati opet ");
