@@ -109,6 +109,9 @@
   <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_9_Performing reflection on base and redived classes/">
     <Project Path="performing_reflection/performing_reflection.csproj" Id="c57fe419-97ae-46b1-9a20-8be5d18c777b" />
   </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lesson_11_Sealed_keyword/">
+    <Project Path="sealed_keywor/sealed_keywor.csproj" Id="3b42f791-7aff-4b13-9f32-2be256faac37" />
+  </Folder>
   <Folder Name="/BobTabor/Thinking like an object oriented programer/" />
   <Folder Name="/BobTabor/Thinking like an object oriented programer/ConsoleApplication/">
     <Project Path="ThinkingLikeAnOOPConsole/ThinkingLikeAnOOPConsole.csproj" Id="efb26b5a-a52f-401d-9d30-4fa01cefe250" />
