@@ -88,6 +88,18 @@
   <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_10_Method hidding/">
     <Project Path="method hiding/method hiding.csproj" Id="b4b25f9e-bedc-47cd-964a-e0a2382943e4" />
   </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_12_Extension_Methods/">
+    <Project Path="extension_Methods/extension_Methods.csproj" Id="ad6aac70-0645-4c62-9da4-45f9fc8c8292" />
+  </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_13_Abstract_Classes/">
+    <Project Path="Abstract_classes/Abstract_classes.csproj" Id="f085d6d6-c54b-4f97-b57f-b474e7a6e09d" />
+  </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_14_Inheriotnace_Chalenge2/">
+    <Project Path="inheritanceChalenge2/inheritanceChalenge2.csproj" Id="f2c5b3ca-b792-40c0-993e-53d4cfa552af" />
+  </Folder>
+  <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_16_Basic_Inteface_Inheritance/">
+    <Project Path="basicInterfaceInheritance/basicInterfaceInheritance.csproj" Id="5ad6c620-ecea-467b-96a7-4bf892ddae9f" />
+  </Folder>
   <Folder Name="/BobTabor/Inheritance Fundamentals/Lession_1_Introduction_to_inheritance/">
     <Project Path="introduction_to_inheritance/introduction_to_inheritance.csproj" Id="7351a1ef-bfeb-4fd7-894b-580aeb6fb6f4" />
   </Folder>

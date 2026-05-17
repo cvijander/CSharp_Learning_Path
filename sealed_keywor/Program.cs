@@ -46,10 +46,11 @@
 
     class HouseCat : Feline
     {
-        public override void Walk()
+       /* public override void Walk()
         {
             Console.WriteLine("This kitty is pouncing");
         }
+       */
     }
 
 
